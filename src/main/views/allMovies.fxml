@@ -1,11 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1200.0" stylesheets="@../resources/css/styles.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.AllMovies">
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" stylesheets="@../resources/css/styles.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.AllMoviesController">
    <children>
-      <VBox prefHeight="600.0" prefWidth="250.0" styleClass="sideMenu" />
-      <VBox layoutX="250.0" prefHeight="600.0" prefWidth="950.0" styleClass="main" />
+      <VBox prefHeight="600.0" prefWidth="250.0" styleClass="sideMenu">
+         <children>
+            <ImageView fitHeight="188.0" fitWidth="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/logo.jpg" />
+               </image></ImageView>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" styleClass="btn" text="Movies" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/allmovies.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" styleClass="btn" text="Snacks" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/allmovies.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" styleClass="btn" text="Theatres" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/allmovies.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" styleClass="btn" text="All Movies" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/allmovies.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" styleClass="btn" text="Login" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/allmovies.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children></VBox>
+      <Pane fx:id="loginPane" layoutX="250.0" prefHeight="600.0" prefWidth="950.0">
+         <children>
+            <VBox layoutX="100.0" layoutY="200.0" prefHeight="120.0" prefWidth="275.0">
+               <children>
+                  <TextField fx:id="loginEmailTF" prefHeight="20.0" prefWidth="275.0" promptText="Email">
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <PasswordField fx:id="loginPasswordTF" promptText="Password">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <Text fill="#0a83ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot Password" textAlignment="RIGHT" wrappingWidth="275.0">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Button mnemonicParsing="false" onAction="#login" prefWidth="275.0" text="Login">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin></Button>
+                  <Text fx:id="loginErrorTF" fill="#ff0a0a" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="275.0" />
+               </children>
+            </VBox>
+            <Text fill="WHITE" layoutX="150.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Login">
+               <font>
+                  <Font name="Segoe UI" size="25.0" />
+               </font>
+            </Text>
+            <VBox layoutX="560.0" layoutY="150.0" prefHeight="120.0" prefWidth="275.0">
+               <children>
+                  <TextField fx:id="registerFirstNameTF" prefHeight="20.0" prefWidth="275.0" promptText="First Name">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="registerLastNameTF" prefHeight="20.0" prefWidth="275.0" promptText="Last Name">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="registerEmailTF" promptText="Email">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <PasswordField fx:id="registerPasswordTF" promptText="Password">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <PasswordField fx:id="registerConfirmPasswordTF" promptText="Confirm Password">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <DatePicker fx:id="registerDateOfBirthPicker" prefHeight="26.0" prefWidth="275.0" promptText="Date of Birth">
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                  </DatePicker>
+                  <Button mnemonicParsing="false" onAction="#register" prefWidth="275.0" text="Register">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Text fx:id="loginErrorTF1" fill="#ff0a0a" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="275.0" />
+               </children>
+            </VBox>
+         </children></Pane>
    </children>
 </AnchorPane>

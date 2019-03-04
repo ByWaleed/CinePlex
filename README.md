@@ -1,1 +1,3 @@
-SDD-Y1-Assignment2
+# Cinema Booking System
+
+Software Design & Development (Year 1) Assignment 2

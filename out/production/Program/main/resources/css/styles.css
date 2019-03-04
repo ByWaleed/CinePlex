@@ -6,6 +6,11 @@
     -fx-background-color:  #2574a9;
 }
 
+.sideMenu .btn{
+    -fx-background-color: transparent;
+    /*-fx-border-color: #24252a;*/
+}
+
 .main{
 
 }
