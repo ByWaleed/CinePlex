@@ -23,6 +23,15 @@ public class Accounts extends User{
         return users.size() + 1;
     }
 
+    public boolean isUsedEmail(String email) {
+        for (User user : users) {
+            if (user.getEmail().equalsIgnoreCase(email)){
+                return true;
+            }
+        }
+        return false;
+    }
+
     public boolean addUser(User newUser) {
         users.add(newUser);
         passwords.put(newUser.getEmail(), newUser.getPassword());

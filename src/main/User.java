@@ -1,5 +1,6 @@
 package main;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -12,13 +13,13 @@ public abstract class User {
     private String lastName;
     private String email;
     private String password;
-    private Date registrationDate;
-    private Date dateOfBirth;
+    private LocalDate registrationDate;
+    private LocalDate dateOfBirth;
     private String accountType;
 
     public User(){}
 
-    public User(Integer id, String firstName, String lastName, String email, String password, Date dateOfBirth, String accountType) {
+    /*public User(Integer id, String firstName, String lastName, String email, String password, Date dateOfBirth, String accountType) {
         this.id = id;
         setFirstName(firstName);
         setLastName(lastName);
@@ -27,6 +28,12 @@ public abstract class User {
         this.registrationDate = new Date();
         setDateOfBirth(dateOfBirth);
         setAccountType(accountType);
+    }*/
+
+    public User (Integer id, String accountType) {
+        this.id = id;
+        this.accountType = accountType;
+        this.registrationDate = LocalDate.now();
     }
 
     // GETTERS
@@ -50,11 +57,11 @@ public abstract class User {
         return password;
     }
 
-    public Date getRegistrationDate() {
+    public LocalDate getRegistrationDate() {
         return registrationDate;
     }
 
-    public Date getDateOfBirth() {
+    public LocalDate getDateOfBirth() {
         return dateOfBirth;
     }
 
@@ -62,8 +69,8 @@ public abstract class User {
         return this.accountType;
     }
 
-    // SETTERS
-    private boolean validateName(String name) {
+    // SETTERS & other methods
+    private boolean validName(String name) {
         if (name.length() > 1) {
             return true;
         } else {
@@ -72,7 +79,7 @@ public abstract class User {
     }
 
     public boolean setFirstName(String firstName) {
-        if (validateName(firstName)) {
+        if (validName(firstName)) {
             this.firstName = firstName;
             return true;
         } else {
@@ -81,7 +88,7 @@ public abstract class User {
     }
 
     public boolean setLastName(String lastName) {
-        if (validateName(lastName)) {
+        if (validName(lastName)) {
             this.lastName = lastName;
             return true;
         } else {
@@ -89,14 +96,14 @@ public abstract class User {
         }
     }
 
-    private boolean validateEmail(String email) {
+    private boolean validEmail(String email) {
         Pattern emailPattern = Pattern.compile("^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
         Matcher matcher = emailPattern.matcher(email);
         return matcher.matches();
     }
 
     public boolean setEmail(String email) {
-        if (validateEmail(email)) {
+        if (validEmail(email)) {
             this.email = email;
             return true;
         } else {
@@ -104,13 +111,12 @@ public abstract class User {
         }
     }
 
-    public boolean updatePassword(String password) {
-        if (password.length() > 6) {
+    public boolean updatePassword(String password, String confirmPassword) {
+        if (password.length() > 6 && (password.equals(confirmPassword))) {
             this.password = password;
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 
     public boolean setAccountType(String accountType) {
@@ -118,9 +124,13 @@ public abstract class User {
         return true;
     }
 
-    /* TODO Missing operations in class diagram */
-    public void setDateOfBirth(Date dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public boolean setDateOfBirth(LocalDate dateOfBirth) {
+        if (dateOfBirth != null) {
+            this.dateOfBirth = dateOfBirth;
+            return true;
+        }
+
+        return false;
     }
 
     @Override

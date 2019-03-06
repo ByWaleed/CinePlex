@@ -13,13 +13,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1200.0" stylesheets="@../resources/css/styles.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.AllMoviesController">
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" stylesheets="@../resources/css/styles.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.AllMoviesController">
    <children>
       <VBox prefHeight="600.0" prefWidth="250.0" styleClass="sideMenu">
          <children>
-            <ImageView fitHeight="188.0" fitWidth="252.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="208.0" fitWidth="252.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../resources/images/logo.jpg" />
+                  <Image url="@../resources/images/logo.png" />
                </image></ImageView>
             <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" styleClass="btn" text="Movies" textFill="WHITE">
                <graphic>
@@ -102,42 +102,53 @@
                <children>
                   <TextField fx:id="registerFirstNameTF" prefHeight="20.0" prefWidth="275.0" promptText="First Name">
                      <VBox.margin>
-                        <Insets bottom="10.0" />
+                        <Insets bottom="20.0" />
                      </VBox.margin>
                   </TextField>
                   <TextField fx:id="registerLastNameTF" prefHeight="20.0" prefWidth="275.0" promptText="Last Name">
                      <VBox.margin>
-                        <Insets bottom="10.0" />
+                        <Insets bottom="20.0" />
                      </VBox.margin>
                   </TextField>
                   <TextField fx:id="registerEmailTF" promptText="Email">
                      <VBox.margin>
-                        <Insets bottom="10.0" />
+                        <Insets bottom="20.0" />
                      </VBox.margin>
                   </TextField>
                   <PasswordField fx:id="registerPasswordTF" promptText="Password">
                      <VBox.margin>
-                        <Insets bottom="10.0" />
+                        <Insets bottom="20.0" />
                      </VBox.margin>
                   </PasswordField>
                   <PasswordField fx:id="registerConfirmPasswordTF" promptText="Confirm Password">
                      <VBox.margin>
-                        <Insets bottom="10.0" />
+                        <Insets bottom="20.0" />
                      </VBox.margin>
                   </PasswordField>
                   <DatePicker fx:id="registerDateOfBirthPicker" prefHeight="26.0" prefWidth="275.0" promptText="Date of Birth">
                      <VBox.margin>
-                        <Insets bottom="25.0" />
+                        <Insets bottom="30.0" />
                      </VBox.margin>
                   </DatePicker>
+                  <Text fill="#ffffff80" strokeType="OUTSIDE" strokeWidth="0.0" text="By registering you are agreeing to our T&amp;Cs." textAlignment="RIGHT" wrappingWidth="275.368408203125">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Text>
                   <Button mnemonicParsing="false" onAction="#register" prefWidth="275.0" text="Register">
                      <VBox.margin>
                         <Insets bottom="20.0" />
                      </VBox.margin>
                   </Button>
+                  <Text fx:id="registerErrorTF" fill="#ff0a0a" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="275.0" />
                   <Text fx:id="loginErrorTF1" fill="#ff0a0a" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="275.0" />
                </children>
             </VBox>
+            <Text fill="WHITE" layoutX="649.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register " textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI" size="25.0" />
+               </font>
+            </Text>
          </children></Pane>
    </children>
 </AnchorPane>
