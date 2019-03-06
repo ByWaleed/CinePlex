@@ -6,11 +6,25 @@
     -fx-background-color:  #2574a9;
 }
 
-.sideMenu .btn{
+.sideMenu .button{
     -fx-background-color: transparent;
     /*-fx-border-color: #24252a;*/
+    -fx-text-fill: #fff;
 }
 
-.main{
+.sideMenu .button:hover{
+    -fx-background-color : #1686b5;
+}
 
+.sideMenu .button:pressed
+{
+    -fx-background-color : #24252a;
+}
+
+.pane{
+    -fx-background-color: #24252a;
+}
+
+#forgotPassword {
+    -fx-text-fill: #0a83ff;
 }

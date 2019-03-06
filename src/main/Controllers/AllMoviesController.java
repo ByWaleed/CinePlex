@@ -6,9 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import main.Accounts;
@@ -21,6 +19,7 @@ import java.time.Instant;
 import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class AllMoviesController implements Initializable {
@@ -29,18 +28,30 @@ public class AllMoviesController implements Initializable {
 
     User loggedInUser;
 
+    // Navigation Buttons
+    @FXML private Button moviesBtn;
+    @FXML private Button snacksBtn;
+    @FXML private Button theatresBtn;
+    @FXML private Button adminBtn;
+    @FXML private Button loginRegisterBtn;
+
+    // Content Panes
+    @FXML private Pane moviesPane;
+    @FXML private Pane loginRegisterPane;
+
+    // Login Objects
     @FXML private TextField loginEmailTF;
     @FXML private TextField loginPasswordTF;
     @FXML private Text loginErrorTF;
-    @FXML private Text registerErrorTF;
 
+    // Register Objects
     @FXML private TextField registerFirstNameTF;
     @FXML private TextField registerLastNameTF;
     @FXML private TextField registerEmailTF;
     @FXML private PasswordField registerPasswordTF;
     @FXML private PasswordField registerConfirmPasswordTF;
     @FXML private DatePicker registerDateOfBirthPicker;
-
+    @FXML private Text registerErrorTF;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -50,7 +61,7 @@ public class AllMoviesController implements Initializable {
         dummyAccounts();
     }
 
-    public void dummyAccounts() {
+    private void dummyAccounts() {
         Admin admin = new Admin(accounts.generateUserId());
         admin.setFirstName("John");
         admin.setLastName("Doe");
@@ -109,7 +120,7 @@ public class AllMoviesController implements Initializable {
             loggedInUser = accounts.userLogin(email, pass);
 
             if (loggedInUser instanceof User && loggedInUser != null) {
-                System.out.println("Logged in successfully");
+                moviesPane.toFront();
             } else {
                 loginErrorTF.setText("Incorrect login details. Please try again.");;
             }
@@ -118,5 +129,59 @@ public class AllMoviesController implements Initializable {
             System.out.println("An account is already is use. Would you like to logout?");
         }
     }
+
+    public void forgotPassword() {
+        // Create new window
+        // Get email
+        // Validate Email
+        // Generate new random password (for email)
+        // close window
+    }
+
+    private void resetLoginRegisterFields() {
+        loginEmailTF.setText(null);
+        loginPasswordTF.setText(null);
+        loginErrorTF.setText(null);
+
+        registerFirstNameTF.setText(null);
+        registerLastNameTF.setText(null);
+        loginEmailTF.setText(null);
+        registerPasswordTF.setText(null);
+        registerConfirmPasswordTF.setText(null);
+        registerDateOfBirthPicker.setValue(null);
+    }
+
+    /* Consider creating separate controllers and FXML files, rather than using one controller file. */
+
+    public void navigation(ActionEvent actionEvent) {
+        if (actionEvent.getSource() == moviesBtn) {
+            moviesPane.toFront();
+        } else if (actionEvent.getSource() == loginRegisterBtn) {
+            if (loggedInUser == null){
+                loginRegisterPane.toFront();
+            } else {
+                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                alert.setTitle("Account Login Warning");
+                alert.setHeaderText("Looks like you are already logged in.");
+                alert.setContentText("Do you wish to logout?");
+
+                ButtonType logoutBtn = new ButtonType("Logout");
+                ButtonType noLogoutBtn = new ButtonType("Stay Logged In");
+
+                alert.getButtonTypes().setAll(logoutBtn, noLogoutBtn);
+
+                Optional<ButtonType> result = alert.showAndWait();
+                if (result.get() == logoutBtn){
+                    System.out.println("Logout...");
+                    loggedInUser = null;
+                    resetLoginRegisterFields();
+                    loginRegisterPane.toFront();
+                } else {
+                    System.out.println("Ok, np.");
+                }
+            }
+        }
+    }
+    
 
 }
