@@ -7,6 +7,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import main.Accounts;
@@ -14,13 +16,11 @@ import main.Admin;
 import main.Customer;
 import main.User;
 
+import java.awt.*;
 import java.net.URL;
 import java.time.Instant;
 import java.time.LocalDate;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Optional;
-import java.util.ResourceBundle;
+import java.util.*;
 
 public class AllMoviesController implements Initializable {
 
@@ -131,11 +131,47 @@ public class AllMoviesController implements Initializable {
     }
 
     public void forgotPassword() {
-        // Create new window
-        // Get email
-        // Validate Email
-        // Generate new random password (for email)
-        // close window
+        // TODO Code Small... Create methods for each type of alert/diaglog with appropriate parameters
+
+        TextInputDialog forgotPasswordDialog = new TextInputDialog();
+        forgotPasswordDialog.setTitle("Reset Account Password");
+        forgotPasswordDialog.setHeaderText("Please input below the email address associated with your account.");
+        forgotPasswordDialog.setContentText("Email:");
+
+        Optional<String> email = forgotPasswordDialog.showAndWait();
+
+        if (email.isPresent()){
+            if (email.get().isEmpty() ) {
+                forgotPasswordError(
+                        "Invalid Email Provided",
+                        "Provided email was not valid.",
+                        "Please input a valid email.");
+            } else if (!accounts.isUsedEmail(email.get())) {
+                forgotPasswordError(
+                        "Account Not Found",
+                        "Email not linked with any account.",
+                        "Please provide email linked to your account.");
+            } else {
+                String newPassword = accounts.resetPassword(email.get());
+
+                TextInputDialog passwordUpdatedDialog = new TextInputDialog(newPassword);
+                passwordUpdatedDialog.setTitle("Email: Reset Account Password");
+                passwordUpdatedDialog.setHeaderText("Your password has been successfully reset.");
+                passwordUpdatedDialog.setContentText("New Password: ");
+                passwordUpdatedDialog.showAndWait();
+            }
+        }
+    }
+
+    private void forgotPasswordError(String title, String headerText, String contentText){
+        Alert errorDialog = new Alert(Alert.AlertType.ERROR);
+        errorDialog.setTitle(title);
+        errorDialog.setHeaderText(headerText);
+        errorDialog.setContentText(contentText);
+        Optional<ButtonType> errorDialogBtn = errorDialog.showAndWait();
+        if (errorDialogBtn.get().equals(ButtonType.OK)) {
+            forgotPassword();
+        }
     }
 
     private void resetLoginRegisterFields() {
@@ -154,7 +190,7 @@ public class AllMoviesController implements Initializable {
     /* Consider creating separate controllers and FXML files, rather than using one controller file. */
 
     public void navigation(ActionEvent actionEvent) {
-        if (actionEvent.getSource() == moviesBtn) {
+        if (actionEvent.getSource().equals(moviesBtn)) {
             moviesPane.toFront();
         } else if (actionEvent.getSource() == loginRegisterBtn) {
             if (loggedInUser == null){
@@ -172,7 +208,6 @@ public class AllMoviesController implements Initializable {
 
                 Optional<ButtonType> result = alert.showAndWait();
                 if (result.get() == logoutBtn){
-                    System.out.println("Logout...");
                     loggedInUser = null;
                     resetLoginRegisterFields();
                     loginRegisterPane.toFront();

@@ -52,7 +52,7 @@
                               <Insets bottom="10.0" />
                            </VBox.margin>
                         </PasswordField>
-                        <TextField fx:id="forgotPassword" alignment="CENTER_RIGHT" layoutX="120.0" layoutY="64.0" onAction="#forgotPassword" prefHeight="25.0" prefWidth="184.0" style="-fx-background-color: transparent;" text="Forgot Password">
+                        <TextField fx:id="forgotPassword" alignment="CENTER_RIGHT" editable="false" layoutX="120.0" layoutY="64.0" onMouseClicked="#forgotPassword" prefHeight="25.0" prefWidth="184.0" style="-fx-background-color: transparent;" text="Forgot Password">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>

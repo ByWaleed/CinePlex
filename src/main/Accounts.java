@@ -2,6 +2,7 @@ package main;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Random;
 
 public class Accounts extends User{
     private ArrayList<User> users = new ArrayList<User>(0);
@@ -39,9 +40,6 @@ public class Accounts extends User{
     }
 
     public User userLogin(String email, String pass) {
-        System.out.println("Email: " + email);
-        System.out.println("Password: " + pass);
-
         String validPassword = passwords.get(email);
         if ((validPassword != null) && validPassword.matches(pass)) {
             for (User user : users) {
@@ -53,6 +51,26 @@ public class Accounts extends User{
         } else {
             return null;
         }
+    }
+
+    public String resetPassword(String email) {
+        /* Improvement: Update the users ArrayList with new password too or remove password from there. */
+        String newPassword = generateRandomPassword(12);
+        passwords.put(email, newPassword);
+        return newPassword;
+    }
+
+    private String generateRandomPassword(int length) {
+        char[] chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST".toCharArray();
+
+        StringBuilder sb = new StringBuilder();
+        Random random = new Random();
+        for (int i = 0; i < length; i++) {
+            char c = chars[random.nextInt(chars.length)];
+            sb.append(c);
+        }
+        String randomStr = sb.toString();
+        return randomStr;
     }
 
     public void printCustomers(){
