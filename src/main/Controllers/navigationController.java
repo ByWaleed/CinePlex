@@ -6,25 +6,30 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 
+import javafx.scene.Parent;
 import javafx.scene.control.*;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 import main.Accounts;
 import main.Admin;
 import main.Customer;
 import main.User;
 
 import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.io.IOException;
 import java.net.URL;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.util.*;
 
-public class AllMoviesController implements Initializable {
+public class navigationController implements Initializable {
 
-    Accounts accounts;
+     /*Accounts accounts;
 
     User loggedInUser;
 
@@ -53,7 +58,7 @@ public class AllMoviesController implements Initializable {
     @FXML private DatePicker registerDateOfBirthPicker;
     @FXML private Text registerErrorTF;
 
-    @Override
+   @Override
     public void initialize(URL location, ResourceBundle resources) {
         loggedInUser = null;
         accounts = new Accounts();
@@ -125,7 +130,7 @@ public class AllMoviesController implements Initializable {
                 loginErrorTF.setText("Incorrect login details. Please try again.");;
             }
         } else {
-            /* TODO Make exception where user is already logged in? */
+            *//* TODO Make exception where user is already logged in? *//*
             System.out.println("An account is already is use. Would you like to logout?");
         }
     }
@@ -187,11 +192,14 @@ public class AllMoviesController implements Initializable {
         registerDateOfBirthPicker.setValue(null);
     }
 
-    /* Consider creating separate controllers and FXML files, rather than using one controller file. */
+    *//* Consider creating separate controllers and FXML files, rather than using one controller file. *//*
 
     public void navigation(ActionEvent actionEvent) {
         if (actionEvent.getSource().equals(moviesBtn)) {
             moviesPane.toFront();
+            *//*nodes[i] = FXMLLoader.load(getClass().getResource("Item.fxml"));
+            pnItems.getChildren().add(nodes[i]);*//*
+
         } else if (actionEvent.getSource() == loginRegisterBtn) {
             if (loggedInUser == null){
                 loginRegisterPane.toFront();
@@ -216,7 +224,41 @@ public class AllMoviesController implements Initializable {
                 }
             }
         }
-    }
-    
+    }*/
 
+    @FXML private AnchorPane mainAnchorPane;
+
+    @FXML private Button moviesBtn;
+    @FXML private Button snacksBtn;
+    @FXML private Button theaturesBtn;
+    @FXML private Button adminBtn;
+    @FXML private Button loginRegisterBtn;
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+    }
+
+    private void loadUI(String ui) {
+        Parent root;
+        try {
+            root = FXMLLoader.load(getClass().getResource(ui + ".fxml"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void close(MouseEvent event) {
+        Stage stage = (Stage) mainAnchorPane.getScene().getWindow();
+        stage.close();
+    }
+
+    public void navigation(ActionEvent actionEvent) {
+        System.out.println("Clicked");
+    }
+
+    public void moviesNavOption(ActionEvent actionEvent) {
+        System.out.println("Clicked");
+    }
 }

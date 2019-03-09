@@ -13,13 +13,13 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("/main/views/allMovies.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/main/views/base.fxml"));
 
         /* Title & Icon */
         primaryStage.setTitle("Cinema Booking System");
         primaryStage.getIcons().add(new Image("main/resources/images/icon.png"));
 
-        /* AllMoviesController Window Properties */
+        /* baseController Window Properties */
         Scene allMovies = new Scene(root, 1200, 600);
         
         primaryStage.setScene(allMovies);
