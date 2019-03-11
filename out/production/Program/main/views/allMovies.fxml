@@ -17,7 +17,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1200.0" stylesheets="@../resources/css/styles.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.AllMoviesController">
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" stylesheets="@../resources/css/styles.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.navigationController">
    <children>
       <VBox prefHeight="600.0" prefWidth="250.0" styleClass="sideMenu">
          <children>

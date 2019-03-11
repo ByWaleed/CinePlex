@@ -1,0 +1,7 @@
+.root{
+    -fx-background-color: #24252a;
+}
+
+#forgotPassword {
+    -fx-text-fill: #0a83ff;
+}

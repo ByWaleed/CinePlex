@@ -4,11 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-
 import javafx.scene.control.*;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import main.Accounts;
@@ -16,20 +12,20 @@ import main.Admin;
 import main.Customer;
 import main.User;
 
-import java.awt.*;
+import java.io.IOException;
 import java.net.URL;
-import java.time.Instant;
 import java.time.LocalDate;
-import java.util.*;
+import java.util.Optional;
+import java.util.ResourceBundle;
 
-public class AllMoviesController implements Initializable {
-
+public class loginRegisterController implements Initializable {
     Accounts accounts;
 
     User loggedInUser;
 
     // Navigation Buttons
-    @FXML private Button moviesBtn;
+    @FXML
+    private Button moviesBtn;
     @FXML private Button snacksBtn;
     @FXML private Button theatresBtn;
     @FXML private Button adminBtn;
@@ -55,29 +51,9 @@ public class AllMoviesController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        loggedInUser = null;
-        accounts = new Accounts();
-
-        dummyAccounts();
-    }
-
-    private void dummyAccounts() {
-        Admin admin = new Admin(accounts.generateUserId());
-        admin.setFirstName("John");
-        admin.setLastName("Doe");
-        admin.setEmail("john@email.com");
-        admin.updatePassword("superadmin", "superadmin");
-        admin.setDateOfBirth(LocalDate.of(Integer.parseInt("2019"), Integer.parseInt("01"), Integer.parseInt("01")));
-
-        Customer customer = new Customer(accounts.generateUserId());
-        customer.setFirstName("Jane");
-        customer.setLastName("Doe");
-        customer.setEmail("jane@email.com");
-        customer.updatePassword("secret", "secret123");
-        customer.setDateOfBirth(LocalDate.of(Integer.parseInt("2019"), Integer.parseInt("01"), Integer.parseInt("01")));
-
-        accounts.addUser(admin);
-        accounts.addUser(customer);
+        System.out.println("loginRegister controller loaded.");
+        this.accounts = baseController.accounts;
+        System.out.println(this.accounts);
     }
 
     public void register(ActionEvent event) {
@@ -120,9 +96,9 @@ public class AllMoviesController implements Initializable {
             loggedInUser = accounts.userLogin(email, pass);
 
             if (loggedInUser instanceof User && loggedInUser != null) {
-                moviesPane.toFront();
+                System.out.println("User logged in successfully");
             } else {
-                loginErrorTF.setText("Incorrect login details. Please try again.");;
+                loginErrorTF.setText("Incorrect login details. Please try again.");
             }
         } else {
             /* TODO Make exception where user is already logged in? */
@@ -131,7 +107,7 @@ public class AllMoviesController implements Initializable {
     }
 
     public void forgotPassword() {
-        // TODO Code Small... Create methods for each type of alert/diaglog with appropriate parameters
+        // TODO Code Small... Create methods for each type of alert/dialog with appropriate parameters
 
         TextInputDialog forgotPasswordDialog = new TextInputDialog();
         forgotPasswordDialog.setTitle("Reset Account Password");
@@ -186,37 +162,4 @@ public class AllMoviesController implements Initializable {
         registerConfirmPasswordTF.setText(null);
         registerDateOfBirthPicker.setValue(null);
     }
-
-    /* Consider creating separate controllers and FXML files, rather than using one controller file. */
-
-    public void navigation(ActionEvent actionEvent) {
-        if (actionEvent.getSource().equals(moviesBtn)) {
-            moviesPane.toFront();
-        } else if (actionEvent.getSource() == loginRegisterBtn) {
-            if (loggedInUser == null){
-                loginRegisterPane.toFront();
-            } else {
-                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-                alert.setTitle("Account Login Warning");
-                alert.setHeaderText("Looks like you are already logged in.");
-                alert.setContentText("Do you wish to logout?");
-
-                ButtonType logoutBtn = new ButtonType("Logout");
-                ButtonType noLogoutBtn = new ButtonType("Stay Logged In");
-
-                alert.getButtonTypes().setAll(logoutBtn, noLogoutBtn);
-
-                Optional<ButtonType> result = alert.showAndWait();
-                if (result.get() == logoutBtn){
-                    loggedInUser = null;
-                    resetLoginRegisterFields();
-                    loginRegisterPane.toFront();
-                } else {
-                    System.out.println("Ok, np.");
-                }
-            }
-        }
-    }
-    
-
 }

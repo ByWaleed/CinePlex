@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.MoviesController">
+   <children>
+      <ScrollPane fx:id="allMoviesSP" prefHeight="600.0" prefWidth="950.0">
+         <content>
+            <AnchorPane fx:id="allMoviesPane" prefHeight="600.0" prefWidth="950.0" style="-fx-background-image: url(&quot;file:main/resources/images/movies/bg.jpg&quot;);" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
