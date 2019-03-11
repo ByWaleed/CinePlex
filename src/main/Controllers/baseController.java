@@ -11,10 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
-import main.Accounts;
-import main.Admin;
-import main.Customer;
-import main.User;
+import main.*;
 
 import java.awt.*;
 import java.io.IOException;
@@ -28,6 +25,8 @@ public class baseController implements Initializable {
     public static Accounts accounts = new Accounts();
 
     private static User loggedInUser;
+
+    private static Movie selectedMovie;
 
     // Navigation Buttons
     @FXML private Button moviesBtn;
@@ -115,5 +114,13 @@ public class baseController implements Initializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static Movie getSelectedMovie() {
+        return selectedMovie;
+    }
+
+    public static void setSelectedMovie(Movie selectedMovie) {
+        baseController.selectedMovie = selectedMovie;
     }
 }

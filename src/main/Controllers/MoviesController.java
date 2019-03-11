@@ -1,10 +1,15 @@
 package main.Controllers;
 
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Cursor;
 import javafx.scene.Node;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.image.ImageView;
+import javafx.scene.image.Image ;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
@@ -35,35 +40,62 @@ public class MoviesController implements Initializable {
         allMoviesSP.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
 
         int rows = 0;
-        int column = 4;
-        rows = movies.size() / column;
-        if (movies.size() % column > 0) {
+        int columns = 4;
+        rows = movies.size() / columns;
+        if (movies.size() % columns > 0) {
             rows++;
         }
 
         int moviesAdded = 0;
-        for (int r = 0; r <= rows; r++) {
-            HBox hbox = new HBox();
-            hbox.setLayoutY(r * 330);
-            hbox.setLayoutX(10);
+        for (int r = 0; r < rows; r++) {
+            Pane row = new Pane();
+
+            row.setPrefWidth(950);
+            row.setPrefHeight(300);
+            row.setLayoutX(30);
 
             if (r == 0) {
-                hbox.setLayoutY(15);
+                row.setLayoutY(30);
+            } else {
+                row.setLayoutY(15 + (340 * r));
             }
 
-            for (int c = 0; c < column && moviesAdded < movies.size(); c++) {
+            for (int c = 0; (c < columns) && (moviesAdded < movies.size()); c++) {
                 // Add Movies to r HBox
-                Node[] movieItems = new Node[10];
-                try {
-                    movieItems[c] = FXMLLoader.load( getClass().getResource("/main/views/movie.fxml"));
-                    //movies.get(c).getPoster()
-                    hbox.getChildren().add(movieItems[c]);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+                Image img = new Image(movies.get(moviesAdded).getPoster());
+                ImageView posterIV = new ImageView(img);
+                posterIV.setX(c * 230);
+                posterIV.setCursor(Cursor.HAND);
+                posterIV.setId("" + moviesAdded);
+
+                row.getChildren().add(posterIV);
                 moviesAdded++;
+
+                // Add event handler for each movie
+                posterIV.addEventFilter(MouseEvent.MOUSE_PRESSED, new EventHandler<MouseEvent>() {
+                    @Override
+                    public void handle(MouseEvent mouseEvent) {
+                        ImageView posterIV = (ImageView) mouseEvent.getSource();
+                        Integer id = Integer.parseInt(posterIV.getId());
+
+                        baseController.setSelectedMovie(movies.get(id));
+
+                        // select the mainContentPane and update the mainContentPane
+                        try {
+                            Pane movie = FXMLLoader.load(getClass().getResource("/main/views/movie.fxml"));
+                            /*Parent root = (Parent)fxmlLoader.load();
+                            MainController controller = fxmlLoader.<MainController>getController();
+                            controller.setUser(user_id);*/
+
+                            allMoviesPane.getChildren().clear();
+                            allMoviesPane.getChildren().add(movie);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                });
             }
-            allMoviesPane.getChildren().add(hbox);
+            allMoviesPane.getChildren().add(row);
         }
 
         /*Node[] movieItems = new Node[10];
@@ -91,7 +123,13 @@ public class MoviesController implements Initializable {
     private void loadMovies() {
         // Use online OMDb API
         LocalDate random = LocalDate.of(Integer.parseInt("2019"), Integer.parseInt("02"), Integer.parseInt("01"));
-        movies.add(new Movie(generateID(), "Some Movie", "John Doe", random, "Some random movie.", "Unnknown", 5, 16, 12.00, "English", true, "/main/resources/images/movies/1.jpeg"));
+        movies.add(new Movie(generateID(), "Batman vs Superman", "John Doe", random, "Some random movie.", "Unnknown", 5, 16, 12.00, "English", true, "https://m.media-amazon.com/images/M/MV5BYThjYzcyYzItNTVjNy00NDk0LTgwMWQtYjMwNmNlNWJhMzMyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX200.jpg"));
+        movies.add(new Movie(generateID(), "Avengers End Game", "John Doe", random, "Some random movie.", "Unnknown", 5, 16, 12.00, "English", true, "https://m.media-amazon.com/images/M/MV5BNGZiMzBkZjMtNjE3Mi00MWNlLWIyYjItYTk3MjY0Yjg5ODZkXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_SX200.jpg"));
+        movies.add(new Movie(generateID(), "Blade Runner 2049", "John Doe", random, "Some random movie.", "Unnknown", 5, 16, 12.00, "English", true, "https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_SX200.jpg"));
+        movies.add(new Movie(generateID(), "Star Wars the Last Jedi", "John Doe", random, "Some random movie.", "Unnknown", 5, 16, 12.00, "English", true, "https://m.media-amazon.com/images/M/MV5BMjQ1MzcxNjg4N15BMl5BanBnXkFtZTgwNzgwMjY4MzI@._V1_SX200.jpg"));
+        movies.add(new Movie(generateID(), "Matrix", "John Doe", random, "Some random movie.", "Unnknown", 5, 16, 12.00, "English", true, "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX200.jpg"));
+        movies.add(new Movie(generateID(), "The Dark Night", "John Doe", random, "Some random movie.", "Unnknown", 5, 16, 12.00, "English", true, "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX200.jpg"));
+        movies.add(new Movie(generateID(), "Terminator 2", "John Doe", random, "Some random movie.", "Unnknown", 5, 16, 12.00, "English", true, "https://m.media-amazon.com/images/M/MV5BMGU2NzRmZjUtOGUxYS00ZjdjLWEwZWItY2NlM2JhNjkxNTFmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX200.jpg"));
     }
 
     private int generateID() {
