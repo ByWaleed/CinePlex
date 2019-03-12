@@ -15,8 +15,9 @@ public class Movie {
     private String languauge;
     private Boolean subTitles;
     private String poster;
+    private String imbdId;
 
-    public Movie(int id, String title, String director, LocalDate releaseDate, String description, String genera, int rating, int minAge, Double price, String languauge, Boolean subTitles, String poster) {
+    public Movie(int id, String title, String director, LocalDate releaseDate, String description, String genera, int rating, int minAge, Double price, String languauge, Boolean subTitles, String poster, String imbdId) {
         this.id = id;
         this.title = title;
         this.director = director;
@@ -29,6 +30,7 @@ public class Movie {
         this.languauge = languauge;
         this.subTitles = subTitles;
         this.poster = poster;
+        this.imbdId = imbdId;
     }
 
     public int getId() {
@@ -125,6 +127,14 @@ public class Movie {
 
     public void setPoster(String poster) {
         this.poster = poster;
+    }
+
+    public String getImbdId() {
+        return imbdId;
+    }
+
+    public void setImbdId(String imbdId) {
+        this.imbdId = imbdId;
     }
 
     @Override

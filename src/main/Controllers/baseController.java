@@ -22,10 +22,11 @@ import java.util.*;
 
 public class baseController implements Initializable {
 
-    public static Accounts accounts = new Accounts();
+    private static Accounts accounts;
+    private static HashMap<String, String> passwords = new HashMap<>(0);
+    private static User loggedInUser = null;
 
-    private static User loggedInUser;
-
+    // For single movie page
     private static Movie selectedMovie;
 
     // Navigation Buttons
@@ -40,32 +41,16 @@ public class baseController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        loggedInUser = null;
-
-        dummyAccounts();
-        System.out.println(accounts);
-    }
-
-    private void dummyAccounts() {
-        Admin admin = new Admin(accounts.generateUserId());
+        baseController.accounts = new Accounts();
+        Admin admin = new Admin(baseController.accounts.generateUserId());
         admin.setFirstName("John");
         admin.setLastName("Doe");
         admin.setEmail("john@email.com");
         admin.updatePassword("superadmin", "superadmin");
         admin.setDateOfBirth(LocalDate.of(Integer.parseInt("2019"), Integer.parseInt("01"), Integer.parseInt("01")));
-
-        Customer customer = new Customer(accounts.generateUserId());
-        customer.setFirstName("Jane");
-        customer.setLastName("Doe");
-        customer.setEmail("jane@email.com");
-        customer.updatePassword("secret", "secret123");
-        customer.setDateOfBirth(LocalDate.of(Integer.parseInt("2019"), Integer.parseInt("01"), Integer.parseInt("01")));
-
-        accounts.addUser(admin);
-        accounts.addUser(customer);
-        System.out.println(accounts);
+        baseController.accounts.addUser(admin);
+        System.out.println(baseController.getAccounts());
     }
-    /* Consider creating separate controllers and FXML files, rather than using one controller file. */
 
     public void navigation(ActionEvent actionEvent) {
         if (actionEvent.getSource().equals(moviesBtn)) {
@@ -83,7 +68,7 @@ public class baseController implements Initializable {
         } else if (actionEvent.getSource() == loginRegisterBtn) {
             if (loggedInUser == null){
                 loadUI("/main/views/loginRegister.fxml");
-            } /*else {
+            } else {
                 Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
                 alert.setTitle("Account Login Warning");
                 alert.setHeaderText("Looks like you are already logged in.");
@@ -97,12 +82,11 @@ public class baseController implements Initializable {
                 Optional<ButtonType> result = alert.showAndWait();
                 if (result.get() == logoutBtn){
                     loggedInUser = null;
-                    resetLoginRegisterFields();
-                    loginRegisterPane.toFront();
+                    loadUI("/main/views/loginRegister.fxml");
                 } else {
                     System.out.println("Ok, np.");
                 }
-            }*/
+            }
         }
     }
 
@@ -114,6 +98,32 @@ public class baseController implements Initializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    /* GETTERS & SETTERS for static attributes */
+
+    public static User getLoggedInUser() {
+        return loggedInUser;
+    }
+
+    public static void setLoggedInUser(User loggedInUser) {
+        baseController.loggedInUser = loggedInUser;
+    }
+
+    public static Accounts getAccounts() {
+        return accounts;
+    }
+
+    public static void setAccounts(Accounts accounts) {
+        baseController.accounts = accounts;
+    }
+
+    public static HashMap<String, String> getPasswords() {
+        return passwords;
+    }
+
+    public static void setPasswords(HashMap<String, String> passwords) {
+        baseController.passwords = passwords;
     }
 
     public static Movie getSelectedMovie() {
