@@ -2,11 +2,18 @@ package main.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import main.Movie;
+import main.Session;
 import sun.net.www.protocol.http.HttpURLConnection;
 
 import java.io.BufferedReader;
@@ -15,30 +22,27 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
+import org.json.*;
 
 public class MovieController implements Initializable{
 
     private final String USER_AGENT = "Mozilla/5.0";
+
     @FXML private ImageView moviePoster;
     @FXML private Text movieTitle;
     @FXML private Text movieYear;
-    @FXML private Text movieGenre;
+    @FXML private Text movieGenere;
     @FXML private Text movieDirector;
-    @FXML private Text movieWriter;
+    @FXML private Text movieWriters;
     @FXML private Text movieActors;
     @FXML private Text moviePlot;
     @FXML private Text movieRating;
-    @FXML private Text movieRating1;
+    @FXML private Text movieRated;
+    @FXML private Text movieAwards;
     @FXML private Text movieSeatsAvailable;
-
-    @FXML void buySeats(ActionEvent event) {
-
-    }
-
-    @FXML void watchTrailer(ActionEvent event) {
-
-    }
+    @FXML private Text moviePrice;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -56,6 +60,17 @@ public class MovieController implements Initializable{
 
         moviePoster.setImage(new Image(posterLocation));
         movieTitle.setText(movie.getTitle());
+        movieYear.setText("" + movie.getReleaseDate());
+        movieGenere.setText(movie.getGenera());
+        movieDirector.setText(movie.getDirector());
+        movieWriters.setText(movie.getWriter());
+        movieActors.setText(movie.getActors());
+        moviePlot.setText(movie.getDescription());
+        movieRating.setText("" + movie.getRating());
+        movieRated.setText(movie.getRated());
+        movieAwards.setText(movie.getAwards());
+        movieSeatsAvailable.setText("");
+        moviePrice.setText("£" + movie.getPrice());
     }
 
     /* SOURCE https://www.mkyong.com/java/how-to-send-http-request-getpost-in-java/ */
@@ -86,8 +101,42 @@ public class MovieController implements Initializable{
         }
         in.close();
 
-        //print result
+        // return in JSON
+        System.out.println(response);
+        JSONObject jsonResponse = new JSONObject(response);
+
+        System.out.println(jsonResponse);
+        /*for (int i = 0; i < arr.length(); i++)
+            System.out.println(arr.getInt(i));*/
         return response.toString();
+
+    }
+
+    @FXML void makeBooking(ActionEvent event) throws IOException {
+        Movie selected = baseController.getSelectedMovie();
+
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/main/views/selectTheatreSeats.fxml"));
+        Parent selectSeatsView = (Parent) fxmlLoader.load();
+
+        Stage stage = new Stage();
+        stage.setScene(new Scene(selectSeatsView, 1175, 500));
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setTitle("Cinema Booking System");
+        stage.getIcons().add(new Image("main/resources/images/icon.png"));
+        stage.setResizable(false);
+        /* baseController Window Properties */
+        stage.show();
+
+        /*try {
+            Pane movie = FXMLLoader.load(getClass().getResource("/main/views/movie.fxml"));
+            allMoviesPane.getChildren().clear();
+            allMoviesPane.getChildren().add(movie);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }*/
+    }
+
+    @FXML void watchTrailer(ActionEvent event) {
 
     }
 }

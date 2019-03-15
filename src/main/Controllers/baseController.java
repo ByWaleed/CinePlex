@@ -15,6 +15,7 @@ import main.*;
 
 import java.awt.*;
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.net.URL;
 import java.time.Instant;
 import java.time.LocalDate;
@@ -23,11 +24,19 @@ import java.util.*;
 public class baseController implements Initializable {
 
     private static Accounts accounts;
-    private static HashMap<String, String> passwords = new HashMap<>(0);
-    private static User loggedInUser = null;
+    private static HashMap<String, String> passwords;
+    private static User loggedInUser;
 
-    // For single movie page
+    private static ArrayList<Session> sessions;
+    private static ArrayList<Theatre> theatres;
+    private static ArrayList<Seat> seats;
+
+    private static ArrayList<Movie> movies;
+
     private static Movie selectedMovie;
+
+    private static Cart cart = new Cart();
+
 
     // Navigation Buttons
     @FXML private Button moviesBtn;
@@ -42,30 +51,39 @@ public class baseController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         baseController.accounts = new Accounts();
-        Admin admin = new Admin(baseController.accounts.generateUserId());
-        admin.setFirstName("John");
-        admin.setLastName("Doe");
-        admin.setEmail("john@email.com");
-        admin.updatePassword("superadmin", "superadmin");
-        admin.setDateOfBirth(LocalDate.of(Integer.parseInt("2019"), Integer.parseInt("01"), Integer.parseInt("01")));
-        baseController.accounts.addUser(admin);
-        System.out.println(baseController.getAccounts());
+        baseController.passwords = new HashMap<>(0);
+        baseController.loggedInUser = null;
+
+        baseController.sessions = new ArrayList<>(0);
+        baseController.theatres = new ArrayList<>(0);
+        baseController.seats = new ArrayList<>(0);
+
+        baseController.movies = new ArrayList<>(0);
+        baseController.selectedMovie = null;
+
+        dummyData.createMovies();
+        dummyData.createTheatres();
+        dummyData.createSeats();
+        dummyData.createSessions();
     }
 
     public void navigation(ActionEvent actionEvent) {
-        if (actionEvent.getSource().equals(moviesBtn)) {
+
+        Object source = actionEvent.getSource();
+
+        if (source.equals(moviesBtn)) {
             loadUI("/main/views/movies.fxml");
 
-        } else if (actionEvent.getSource() ==  snacksBtn) {
+        } else if (source.equals(snacksBtn)) {
             System.out.println("Snacks pane selected");
 
-        } else if (actionEvent.getSource() ==  theatresBtn) {
+        } else if (source.equals(theatresBtn)) {
             System.out.println("Theatres pane selected");
 
         } else if (actionEvent.getSource() ==  adminBtn) {
             System.out.println("Admin pane selected");
 
-        } else if (actionEvent.getSource() == loginRegisterBtn) {
+        } else if (source.equals(loginRegisterBtn)) {
             if (loggedInUser == null){
                 loadUI("/main/views/loginRegister.fxml");
             } else {
@@ -132,5 +150,45 @@ public class baseController implements Initializable {
 
     public static void setSelectedMovie(Movie selectedMovie) {
         baseController.selectedMovie = selectedMovie;
+    }
+
+    public static ArrayList<Session> getSessions() {
+        return sessions;
+    }
+
+    public static void setSessions(ArrayList<Session> sessions) {
+        baseController.sessions = sessions;
+    }
+
+    public static ArrayList<Theatre> getTheatres() {
+        return theatres;
+    }
+
+    public static void setTheatres(ArrayList<Theatre> theatres) {
+        baseController.theatres = theatres;
+    }
+
+    public static ArrayList<Seat> getSeats() {
+        return seats;
+    }
+
+    public static void setSeats(ArrayList<Seat> seats) {
+        baseController.seats = seats;
+    }
+
+    public static ArrayList<Movie> getMovies() {
+        return movies;
+    }
+
+    public static void setMovies(ArrayList<Movie> movies) {
+        baseController.movies = movies;
+    }
+
+    public static Cart getCart() {
+        return cart;
+    }
+
+    public static void setCart(Cart cart) {
+        baseController.cart = cart;
     }
 }

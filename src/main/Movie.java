@@ -9,15 +9,20 @@ public class Movie {
     private LocalDate releaseDate;
     private String description;
     private String genera;
-    private int rating;
+    private Double rating;
     private int minAge;
     private Double price;
     private String languauge;
     private Boolean subTitles;
     private String poster;
     private String imbdId;
+    private String writer;
+    private String actors;
+    private String rated;
+    private String awards;
+    private String trailer;
 
-    public Movie(int id, String title, String director, LocalDate releaseDate, String description, String genera, int rating, int minAge, Double price, String languauge, Boolean subTitles, String poster, String imbdId) {
+    public Movie(int id, String title, String director, String writer, String actors, String rated, LocalDate releaseDate, String description, String genera, Double rating, int minAge, Double price, String languauge, Boolean subTitles, String poster, String imbdId, String awards, String trailer) {
         this.id = id;
         this.title = title;
         this.director = director;
@@ -31,6 +36,11 @@ public class Movie {
         this.subTitles = subTitles;
         this.poster = poster;
         this.imbdId = imbdId;
+        this.writer = writer;
+        this.actors = actors;
+        this.rated = rated;
+        this.awards = awards;
+        this.trailer = trailer;
     }
 
     public int getId() {
@@ -81,11 +91,11 @@ public class Movie {
         this.genera = genera;
     }
 
-    public int getRating() {
+    public Double getRating() {
         return rating;
     }
 
-    public void setRating(int rating) {
+    public void setRating(Double rating) {
         this.rating = rating;
     }
 
@@ -135,6 +145,38 @@ public class Movie {
 
     public void setImbdId(String imbdId) {
         this.imbdId = imbdId;
+    }
+
+    public String getWriter() {
+        return writer;
+    }
+
+    public void setWriter(String writer) {
+        this.writer = writer;
+    }
+
+    public String getActors() {
+        return actors;
+    }
+
+    public void setActors(String actors) {
+        this.actors = actors;
+    }
+
+    public String getRated() {
+        return rated;
+    }
+
+    public void setRated(String rated) {
+        this.rated = rated;
+    }
+
+    public String getAwards() {
+        return awards;
+    }
+
+    public void setAwards(String awards) {
+        this.awards = awards;
     }
 
     @Override

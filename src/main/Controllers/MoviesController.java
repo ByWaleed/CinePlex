@@ -24,20 +24,20 @@ import java.util.ResourceBundle;
 
 public class MoviesController implements Initializable {
 
-    ArrayList<Movie> movies = new ArrayList<Movie>(0);
-
     @FXML private javafx.scene.control.ScrollPane allMoviesSP;
     @FXML private AnchorPane allMoviesPane;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        loadMovies();
+        //loadMovies();
         displayMovies();
     }
 
     public void displayMovies() {
 
         allMoviesSP.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+
+        ArrayList<Movie> movies = baseController.getMovies();
 
         int rows = 0;
         int columns = 4;
@@ -94,18 +94,6 @@ public class MoviesController implements Initializable {
 
     private void loadMovies() {
         // Use online OMDb API
-        LocalDate random = LocalDate.of(Integer.parseInt("2019"), Integer.parseInt("02"), Integer.parseInt("01"));
-        movies.add(new Movie(generateID(), "Batman vs Superman", "John Doe", random, "Some random movie.", "Unnknown", 5, 16, 12.00, "English", true, "https://m.media-amazon.com/images/M/MV5BYThjYzcyYzItNTVjNy00NDk0LTgwMWQtYjMwNmNlNWJhMzMyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX200.jpg", "tt2975590"));
-        movies.add(new Movie(generateID(), "Avengers End Game", "John Doe", random, "Some random movie.", "Unnknown", 5, 16, 12.00, "English", true, "https://m.media-amazon.com/images/M/MV5BNGZiMzBkZjMtNjE3Mi00MWNlLWIyYjItYTk3MjY0Yjg5ODZkXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_SX200.jpg", "tt4154796"));
-        movies.add(new Movie(generateID(), "Blade Runner 2049", "John Doe", random, "Some random movie.", "Unnknown", 5, 16, 12.00, "English", true, "https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_SX200.jpg", "tt1856101"));
-        movies.add(new Movie(generateID(), "Star Wars the Last Jedi", "John Doe", random, "Some random movie.", "Unnknown", 5, 16, 12.00, "English", true, "https://m.media-amazon.com/images/M/MV5BMjQ1MzcxNjg4N15BMl5BanBnXkFtZTgwNzgwMjY4MzI@._V1_SX200.jpg", "tt2527336"));
-        movies.add(new Movie(generateID(), "Matrix", "John Doe", random, "Some random movie.", "Unnknown", 5, 16, 12.00, "English", true, "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX200.jpg", "tt0133093"));
-        movies.add(new Movie(generateID(), "The Dark Night", "John Doe", random, "Some random movie.", "Unnknown", 5, 16, 12.00, "English", true, "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX200.jpg", "tt0468569"));
-        movies.add(new Movie(generateID(), "Terminator 2", "John Doe", random, "Some random movie.", "Unnknown", 5, 16, 12.00, "English", true, "https://m.media-amazon.com/images/M/MV5BMGU2NzRmZjUtOGUxYS00ZjdjLWEwZWItY2NlM2JhNjkxNTFmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX200.jpg", "tt0103064"));
-    }
 
-    private int generateID() {
-        return movies.size() + 1;
     }
-
 }
