@@ -82,8 +82,8 @@ public class dummyData {
             count++;
         }
 
-        sessions.add(new Session(sessions.size() + 1, movies.get(0).getId(), theatres.get(1).getId(), LocalTime.of(21,00), LocalTime.of(22,00)));
-        sessions.add(new Session(sessions.size() + 1, movies.get(0).getId(), theatres.get(1).getId(), LocalTime.of(22,00), LocalTime.of(23,30)));
+        sessions.add(new Session(sessions.size() + 1, movies.get(6).getId(), theatres.get(5).getId(), LocalTime.of(21,00), LocalTime.of(22,00)));
+        sessions.add(new Session(sessions.size() + 1, movies.get(6).getId(), theatres.get(4).getId(), LocalTime.of(22,00), LocalTime.of(23,30)));
 
         baseController.setSessions(sessions);
     }

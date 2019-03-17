@@ -20,6 +20,7 @@ public class Cart {
         this.cart.add(newItem);
     }
 
+
     public void printCart() {
         System.out.println("Items in cart: ");
         if (this.cart.size() > 0) {

@@ -30,6 +30,7 @@ import java.time.LocalTime;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static com.sun.org.apache.bcel.internal.generic.InstructionConstants.POP;
 import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Int;
 
 public class SelectTheatreSeatsController implements Initializable {
@@ -205,23 +206,28 @@ public class SelectTheatreSeatsController implements Initializable {
         Integer selectedSessionIndex = availableTimesLV.getSelectionModel().getSelectedIndex();
         Session selectedSession = timeForSessions.get(selectedSessionIndex);
 
-        CartItem movie = new CartItem(
-                selectedSession.getId(),
-                reservedSeats.get(0).getSeatId()
-            );
+        if (reservedSeats.size() > 0) {
+            for (ReservedSeat seat : reservedSeats) {
+                CartItem item = new CartItem(
+                        selectedSession.getId(),
+                        seat.getSeatId()
+                );
+                baseController.getCart().addItem(item);
+            }
+            //baseController.getCart().printCart();
 
-        baseController.getCart().addItem(movie);
-        //baseController.getCart().printCart();
+            // Show alert for confirmation
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Cinema Booking System");
+            alert.setHeaderText(null);
+            alert.setContentText("\nYour cart has been updated successfully.");
+            alert.showAndWait();
 
-        // Show alert for confirmation
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Cinema Booking System");
-        alert.setHeaderText(null);
-        alert.setContentText("\nYour cart has been updated successfully.");
-        alert.showAndWait();
-
-        // Take user back to the movie/home screen
-        Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
-        stage.close();
+            // Take user back to the movie/home screen
+            Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
+            stage.close();
+        } else {
+            System.out.println("Error, please select at least one seat.");
+        }
     }
 }

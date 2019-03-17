@@ -42,7 +42,7 @@ public class baseController implements Initializable {
     @FXML private Button moviesBtn;
     @FXML private Button snacksBtn;
     @FXML private Button theatresBtn;
-    @FXML private Button adminBtn;
+    @FXML private Button cartBtn;
     @FXML private Button loginRegisterBtn;
 
     @FXML private Pane mainContentPane;
@@ -70,6 +70,7 @@ public class baseController implements Initializable {
     public void navigation(ActionEvent actionEvent) {
 
         Object source = actionEvent.getSource();
+        System.out.println(source);
 
         if (source.equals(moviesBtn)) {
             loadUI("/main/views/movies.fxml");
@@ -80,8 +81,8 @@ public class baseController implements Initializable {
         } else if (source.equals(theatresBtn)) {
             System.out.println("Theatres pane selected");
 
-        } else if (actionEvent.getSource() ==  adminBtn) {
-            System.out.println("Admin pane selected");
+        } else if (actionEvent.getSource() ==  cartBtn){
+            loadUI("/main/views/cart.fxml");
 
         } else if (source.equals(loginRegisterBtn)) {
             if (loggedInUser == null){
