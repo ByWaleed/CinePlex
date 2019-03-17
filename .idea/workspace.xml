@@ -4,6 +4,7 @@
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/out/production/Program/main/resources/images/movies/2.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Program/main/resources/images/movies/4.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Program/main/views/movie.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Program/main/views/movie.fxml" afterDir="false" />
@@ -11,6 +12,11 @@
       <change beforePath="$PROJECT_DIR$/src/main/Controllers/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/MovieController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Controllers/MoviesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/MoviesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Controllers/baseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/baseController.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/out/production/Program/main/views/movie.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Program/main/views/movie.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Program/main/views/movies.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Program/main/views/movies.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Controllers/MoviesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/MoviesController.java" afterDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/src/main/Controllers/loginRegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/loginRegisterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/images/movies/2.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/images/movies/4.jpg" beforeDir="false" />
@@ -88,6 +94,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< Updated upstream
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/Main.java">
               <provider selected="true" editor-type-id="text-editor">
@@ -116,10 +123,18 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="153">
                   <caret line="11" selection-start-line="11" selection-end-line="11" />
+=======
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/Controllers/baseController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="463">
+                  <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+>>>>>>> Stashed changes
                 </state>
               </provider>
             </entry>
           </file>
+<<<<<<< Updated upstream
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/Controllers/baseController.java">
               <provider selected="true" editor-type-id="text-editor">
@@ -140,6 +155,20 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="556">
                   <caret line="119" column="11" lean-forward="true" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
+=======
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/Controllers/MoviesController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="765">
+                  <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+>>>>>>> Stashed changes
                 </state>
               </provider>
             </entry>
@@ -151,11 +180,20 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/Controllers/MovieController.java">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
                 <state relative-caret-position="238">
                   <caret line="23" column="1" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="23" selection-end-column="1" />
                   <folding>
                     <element signature="e#329#330#0" expanded="true" />
                     <element signature="e#398#399#0" expanded="true" />
+=======
+                <state relative-caret-position="187">
+                  <caret line="19" selection-start-line="19" selection-end-line="19" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#323#324#0" expanded="true" />
+                    <element signature="e#374#375#0" expanded="true" />
+>>>>>>> Stashed changes
                   </folding>
                 </state>
               </provider>
@@ -169,8 +207,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -236,12 +274,22 @@
         <option value="$PROJECT_DIR$/src/main/Main.java" />
         <option value="$PROJECT_DIR$/src/main/Controllers/navigationController.java" />
         <option value="$PROJECT_DIR$/src/main/Controllers/loginRegisterController.java" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/src/main/Movie.java" />
         <option value="$PROJECT_DIR$/src/main/views/movie.fxml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/views/movies.fxml" />
         <option value="$PROJECT_DIR$/src/main/views/Movie.fxml" />
         <option value="$PROJECT_DIR$/src/main/Controllers/baseController.java" />
+=======
+        <option value="$PROJECT_DIR$/src/main/Controllers/baseController.java" />
+        <option value="$PROJECT_DIR$/src/main/Movie.java" />
+        <option value="$PROJECT_DIR$/src/main/views/movie.fxml" />
+        <option value="$PROJECT_DIR$/src/main/Controllers/MovieController.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/views/movies.fxml" />
+        <option value="$PROJECT_DIR$/src/main/views/Movie.fxml" />
+>>>>>>> Stashed changes
         <option value="$PROJECT_DIR$/src/main/Controllers/MoviesController.java" />
         <option value="$PROJECT_DIR$/src/main/Controllers/MovieController.java" />
       </list>
@@ -253,11 +301,19 @@
       <select />
     </treeState>
   </component>
+<<<<<<< Updated upstream
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1615" />
+    <option name="height" value="879" />
+>>>>>>> Stashed changes
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -463,10 +519,14 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< Updated upstream
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552302044832" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552251470151" />
+>>>>>>> Stashed changes
     <property name="create.test.in.the.same.root" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Dropbox/Cinema Booking System" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -567,7 +627,6 @@
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -612,7 +671,6 @@
       </method>
     </configuration>
     <configuration default="true" type="TestNG">
-      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -667,13 +725,21 @@
       <workItem from="1552125503712" duration="8507000" />
       <workItem from="1552146958713" duration="13388000" />
       <workItem from="1552233434421" duration="9263000" />
+<<<<<<< Updated upstream
       <workItem from="1552300748107" duration="1313000" />
       <workItem from="1552305800098" duration="363000" />
+=======
+      <workItem from="1552769997688" duration="624000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="89733000" />
+=======
+    <option name="totallyTimeSpent" value="88681000" />
+>>>>>>> Stashed changes
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -685,9 +751,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< Updated upstream
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.14179105" />
+=======
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1359275" />
+>>>>>>> Stashed changes
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -696,6 +768,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
+<<<<<<< Updated upstream
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19201726" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -708,6 +781,20 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32980973" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
+=======
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289166" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19078243" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32969603" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.14409535" />
+>>>>>>> Stashed changes
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -802,18 +889,47 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/Controllers/navigationController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/Controllers/loginRegisterController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/views/allMovies.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/views/loginRegister.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/List.java" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="85">
+            <caret line="5" column="53" lean-forward="true" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+          </first_editor>
+          <second_editor />
+>>>>>>> Stashed changes
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+<<<<<<< Updated upstream
+=======
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="153" lean-forward="true" selection-start-line="11" selection-start-column="116" selection-end-line="11" selection-end-column="153" />
+        </state>
+      </provider>
+>>>>>>> Stashed changes
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/views/Movie.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="408">
           <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
@@ -835,11 +951,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
+=======
+        <state relative-caret-position="170">
+          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="147" selection-start-line="147" selection-end-line="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Controllers/navigationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="251" column="42" lean-forward="true" selection-start-line="251" selection-start-column="42" selection-end-line="251" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Controllers/loginRegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="165" selection-start-line="165" selection-end-line="165" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Controllers/MoviesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Controllers/baseController.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="1734">
           <caret line="122" column="39" selection-start-line="122" selection-start-column="23" selection-end-line="122" selection-end-column="39" />
           <folding>
@@ -847,10 +1006,19 @@
             <element signature="e#4082#4083#0" expanded="true" />
             <element signature="e#4146#4147#0" expanded="true" />
             <element signature="e#4206#4207#0" expanded="true" />
+=======
+        <state relative-caret-position="187">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/Controllers/MoviesController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="556">
@@ -866,6 +1034,12 @@
             <element signature="e#329#330#0" expanded="true" />
             <element signature="e#398#399#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/Controllers/baseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>

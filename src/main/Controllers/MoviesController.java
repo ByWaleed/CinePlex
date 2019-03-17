@@ -77,8 +77,12 @@ public class MoviesController implements Initializable {
                     public void handle(MouseEvent mouseEvent) {
                         ImageView posterIV = (ImageView) mouseEvent.getSource();
                         Integer id = Integer.parseInt(posterIV.getId());
+<<<<<<< Updated upstream
 
                         baseController.setSelectedMovie(movies.get(id));
+=======
+                        System.out.println(movies.get(id));
+>>>>>>> Stashed changes
 
                         // select the mainContentPane and update the mainContentPane
                         try {
