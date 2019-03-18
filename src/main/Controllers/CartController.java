@@ -8,11 +8,16 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.Label;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
+import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import javafx.util.Callback;
 import main.*;
 
@@ -219,9 +224,7 @@ public class CartController implements Initializable {
             }
 
             cashOrderConfirmation(order.getBookingId());
-            userCart.clear();
-            tableRows.clear();
-            tableRowsOL.clear();
+            emptyCart();
         } else {
             emptyCartError();
         }
@@ -247,8 +250,28 @@ public class CartController implements Initializable {
         return temp;
     }
 
-    @FXML void cardPayment() {
-        System.out.println("Cash Payment");
+    @FXML void cardPayment(ActionEvent event) {
+        if (tableRows.size() == 0) {
+            emptyCartError();
+        } else if (baseController.getLoggedInUser() == null) {
+            baseController.notLoggedInError();
+        } else {
+            // Open snack quantity window
+            Stage stage = new Stage();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/main/views/cardPayment.fxml"));
+            try {
+                Parent selectSeatsView = (Parent) fxmlLoader.load();
+                stage.setScene(new Scene(selectSeatsView, 450, 350));
+                CardPaymentController.setCartController(this);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.setTitle("Cinema Booking System");
+            stage.getIcons().add(new Image("main/resources/images/icon.png"));
+            stage.setResizable(false);
+            stage.show();
+        }
     }
 
     private void emptyCartError() {
@@ -257,6 +280,12 @@ public class CartController implements Initializable {
         alert.setHeaderText("Empty Cart");
         alert.setContentText("Please add some items in your cart first.");
         alert.showAndWait();
+    }
+
+    public void emptyCart() {
+        userCart.clear();
+        tableRows.clear();
+        tableRowsOL.clear();
     }
 
     private void cashOrderConfirmation(Integer orderId) {

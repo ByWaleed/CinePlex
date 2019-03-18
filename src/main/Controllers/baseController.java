@@ -86,11 +86,7 @@ public class baseController implements Initializable {
             if (loggedInUser != null) {
                 loadUI("/main/views/bookings.fxml");
             } else {
-                Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                alert.setTitle("Account Login Warning");
-                alert.setHeaderText(null);
-                alert.setContentText("\nPlease login first, then you can see your orders.");
-                alert.showAndWait();
+                notLoggedInError();
             }
 
         } else if (actionEvent.getSource().equals(cartBtn)){
@@ -235,5 +231,13 @@ public class baseController implements Initializable {
 
     public static void addBookingItem(BookingItem item) {
         bookingItems.add(item);
+    }
+
+    public static void notLoggedInError() {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Account Login Warning");
+        alert.setHeaderText(null);
+        alert.setContentText("\nPlease login first to proceed any further.");
+        alert.showAndWait();
     }
 }
