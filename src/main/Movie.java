@@ -179,6 +179,14 @@ public class Movie {
         this.awards = awards;
     }
 
+    public String getTrailer() {
+        return trailer;
+    }
+
+    public void setTrailer(String trailer) {
+        this.trailer = trailer;
+    }
+
     @Override
     public String toString() {
         return "Movie{" +

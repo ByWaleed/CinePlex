@@ -118,7 +118,7 @@ public class SelectTheatreSeatsController implements Initializable {
     @FXML void showSelectedSeats(ActionEvent event) {
         if (availableTimesLV.getSelectionModel().getSelectedIndex() == -1) {
             seatsGridContainer.setVisible(false);
-            System.out.println("Error, please select a theatre and suitable time.");
+            errorMessage("Opps... an error occurred", "Please select a theatre and available time.");
         } else {
             // Get seats of the selected theatre
             ArrayList<Seat> seats = baseController.getSeats();
@@ -203,10 +203,10 @@ public class SelectTheatreSeatsController implements Initializable {
     }
 
     @FXML void addSeatsToCart(ActionEvent event) {
-        Integer selectedSessionIndex = availableTimesLV.getSelectionModel().getSelectedIndex();
-        Session selectedSession = timeForSessions.get(selectedSessionIndex);
-
         if (reservedSeats.size() > 0) {
+            Integer selectedSessionIndex = availableTimesLV.getSelectionModel().getSelectedIndex();
+            Session selectedSession = timeForSessions.get(selectedSessionIndex);
+
             for (ReservedSeat seat : reservedSeats) {
                 CartItem item = new CartItem(
                         selectedSession.getId(),
@@ -214,7 +214,6 @@ public class SelectTheatreSeatsController implements Initializable {
                 );
                 baseController.getCart().addItem(item);
             }
-            //baseController.getCart().printCart();
 
             // Show alert for confirmation
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -227,7 +226,15 @@ public class SelectTheatreSeatsController implements Initializable {
             Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
             stage.close();
         } else {
-            System.out.println("Error, please select at least one seat.");
+            errorMessage("Opps... an error occurred", "Please select at least one seat.");
         }
+    }
+
+    private void errorMessage(String header, String body) {
+        Alert alert = new Alert(Alert.AlertType.WARNING);
+        alert.setTitle("Cinema Booking System");
+        alert.setHeaderText(header);
+        alert.setContentText(body);
+        alert.showAndWait();
     }
 }

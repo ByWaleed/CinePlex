@@ -10,6 +10,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
+import javafx.scene.web.WebView;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import main.Movie;
@@ -137,6 +138,20 @@ public class MovieController implements Initializable{
     }
 
     @FXML void watchTrailer(ActionEvent event) {
+        // Ref: https://stackoverflow.com/a/18761332
+        WebView webview = new WebView();
+        webview.getEngine().load(
+                "http://www.youtube.com/embed/" + baseController.getSelectedMovie().getTrailer() + "?autoplay=1"
+        );
+        webview.setPrefSize(1200, 600);
 
+        Stage stage = new Stage();
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setTitle("Cinema Booking System");
+        stage.getIcons().add(new Image("main/resources/images/icon.png"));
+        stage.setResizable(false);
+
+        stage.setScene(new Scene(webview));
+        stage.show();
     }
 }
