@@ -1,6 +1,7 @@
 package main;
 
 import java.time.LocalDate;
+import java.time.Period;
 import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -126,8 +127,12 @@ public abstract class User {
 
     public boolean setDateOfBirth(LocalDate dateOfBirth) {
         if (dateOfBirth != null) {
-            this.dateOfBirth = dateOfBirth;
-            return true;
+            LocalDate now = LocalDate.now();
+            Period period = Period.between(dateOfBirth, now);
+            if (period.getYears() >= 18) {
+                this.dateOfBirth = dateOfBirth;
+                return true;
+            }
         }
 
         return false;

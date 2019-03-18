@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="250.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.SnackController">
+   <children>
+      <Pane prefHeight="175.0" prefWidth="600.0">
+         <children>
+            <Text layoutX="35.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" text="NAME">
+               <font>
+                  <Font name="Yu Gothic Light" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="278.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" text="PRICE">
+               <font>
+                  <Font name="Yu Gothic Light" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="435.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" text="QUANTITY">
+               <font>
+                  <Font name="Yu Gothic Light" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="itemNameText" layoutX="35.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME">
+               <font>
+                  <Font name="Yu Gothic Light" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="itemPriceText" layoutX="278.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRICE">
+               <font>
+                  <Font name="Yu Gothic Light" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="ItemQuantityTF" layoutX="426.0" layoutY="86.0" prefHeight="25.0" prefWidth="107.0" />
+            <Text fx:id="itemQuantityText" layoutX="544.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(20)">
+               <font>
+                  <Font name="Yu Gothic Light" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Button layoutX="467.0" layoutY="213.0" mnemonicParsing="false" onAction="#addSnackToCart" prefHeight="25.0" prefWidth="117.0" text="ADD TO CART" />
+      <Text layoutX="467.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL:">
+         <font>
+            <Font name="Yu Gothic Light" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="itemTotalPrice" layoutX="543.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="£0.00">
+         <font>
+            <Font name="Yu Gothic Light" size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

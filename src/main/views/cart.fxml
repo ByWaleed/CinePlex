@@ -21,7 +21,6 @@
                   <TableColumn fx:id="cartColumnTotal" prefWidth="151.0" text="TOTAL" />
               </columns>
             </TableView>
-            <Button layoutX="20.0" layoutY="548.0" mnemonicParsing="false" text="LOGIN/REGISTER" />
          </children>
       </Pane>
       <Text layoutX="410.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CART ITEMS">
@@ -29,7 +28,7 @@
             <Font size="24.0" />
          </font>
       </Text>
-      <Button layoutX="814.0" layoutY="548.0" mnemonicParsing="false" text="CARD PAYMENT" />
-      <Button layoutX="698.0" layoutY="548.0" mnemonicParsing="false" text="CASH PAYMENT" />
+      <Button layoutX="808.0" layoutY="541.0" mnemonicParsing="false" onAction="#cardPayment" prefHeight="32.0" prefWidth="110.0" text="CARD PAYMENT" />
+      <Button layoutX="683.0" layoutY="541.0" mnemonicParsing="false" onAction="#cashPayment" prefHeight="32.0" prefWidth="110.0" text="CASH PAYMENT" />
    </children>
 </AnchorPane>

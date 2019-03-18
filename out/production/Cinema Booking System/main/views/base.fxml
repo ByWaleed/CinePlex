@@ -15,11 +15,11 @@
                <image>
                   <Image url="@../resources/images/logo.png" />
                </image></ImageView>
-            <Button fx:id="moviesBtn" alignment="CENTER" mnemonicParsing="false" onAction="#navigation" prefHeight="50.0" prefWidth="250.0" styleClass="btn" text="Movies" textFill="WHITE" />
-            <Button fx:id="snacksBtn" alignment="CENTER" mnemonicParsing="false" onAction="#navigation" prefHeight="50.0" prefWidth="250.0" styleClass="btn" text="Snacks" textFill="WHITE" />
-            <Button fx:id="theatresBtn" alignment="CENTER" mnemonicParsing="false" onAction="#navigation" prefHeight="50.0" prefWidth="250.0" styleClass="btn" text="Theatres" textFill="WHITE" />
-            <Button fx:id="cartBtn" alignment="CENTER" mnemonicParsing="false" onAction="#navigation" prefHeight="50.0" prefWidth="250.0" styleClass="btn" text="Cart" textFill="WHITE" />
-            <Button fx:id="loginRegisterBtn" alignment="CENTER" mnemonicParsing="false" onAction="#navigation" prefHeight="50.0" prefWidth="250.0" styleClass="btn" text="Login / Register" textFill="WHITE" />
+            <Button fx:id="moviesBtn" alignment="CENTER" mnemonicParsing="false" onAction="#navigation" prefHeight="50.0" prefWidth="250.0" styleClass="btn" text="MOVIES" textFill="WHITE" />
+            <Button fx:id="snacksBtn" alignment="CENTER" mnemonicParsing="false" onAction="#navigation" prefHeight="50.0" prefWidth="250.0" styleClass="btn" text="SNACKS" textFill="WHITE" />
+            <Button fx:id="cartBtn" alignment="CENTER" mnemonicParsing="false" onAction="#navigation" prefHeight="50.0" prefWidth="250.0" styleClass="btn" text="CART" textFill="WHITE" />
+            <Button fx:id="bookingsBtn" alignment="CENTER" mnemonicParsing="false" onAction="#navigation" prefHeight="50.0" prefWidth="250.0" styleClass="btn" text="ORDERS" textFill="WHITE" />
+            <Button fx:id="loginRegisterBtn" alignment="CENTER" mnemonicParsing="false" onAction="#navigation" prefHeight="50.0" prefWidth="250.0" styleClass="btn" text="ACCOUNT" textFill="WHITE" />
          </children></VBox>
       <Pane fx:id="mainContentPane" layoutX="250.0" prefHeight="600.0" prefWidth="950.0" />
    </children>

@@ -17,21 +17,19 @@ public class CartScreenItem {
 
     private Integer id;
     private Button remove;
-    private SimpleStringProperty image;
-    private SimpleStringProperty name;
+    private String name;
     private Integer quantity;
     private Double unitPrice;
     private Double total;
 
-    public CartScreenItem(Integer id, String remove, String image, String name, Integer quantity, Double unitPrice, Double total) {
+    public CartScreenItem(Integer id, String name, Integer quantity, Double unitPrice, Double total) {
         this.id = id;
         this.remove = new Button("-");
         this.remove.setId(""+id);
         this.remove.setOnAction((event) -> {
              reduceQuantity(event);
         });
-        this.image = new SimpleStringProperty(image);
-        this.name = new SimpleStringProperty(name);
+        this.name = name;
         this.quantity = quantity;
         this.unitPrice = unitPrice;
         this.total = total;
@@ -53,28 +51,12 @@ public class CartScreenItem {
         this.remove = remove;
     }
 
-    public String getImage() {
-        return image.get();
-    }
-
-    public SimpleStringProperty imageProperty() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image.set(image);
-    }
-
     public String getName() {
-        return name.get();
-    }
-
-    public SimpleStringProperty nameProperty() {
         return name;
     }
 
     public void setName(String name) {
-        this.name.set(name);
+        this.name = name;
     }
 
     public Integer getQuantity() {
@@ -97,7 +79,6 @@ public class CartScreenItem {
         return total;
     }
 
-
     public void setTotal(Double total) {
         this.total = total;
     }
@@ -105,9 +86,9 @@ public class CartScreenItem {
     @Override
     public String toString() {
         return "CartScreenItem{" +
-                "remove=" + remove +
-                ", image=" + image +
-                ", name=" + name +
+                "id=" + id +
+                ", remove=" + remove +
+                ", name='" + name + '\'' +
                 ", quantity=" + quantity +
                 ", unitPrice=" + unitPrice +
                 ", total=" + total +

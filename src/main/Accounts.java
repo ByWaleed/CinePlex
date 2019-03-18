@@ -7,7 +7,7 @@ import java.util.Random;
 public class Accounts extends User{
     private ArrayList<User> users = new ArrayList<User>(0);
 
-    /* Hash map created for log ins with email and password, without going through all users array list. */
+    /* Hash map created for login with email and password, without going through all users array list. */
     private HashMap<String, String> passwords = new HashMap<String, String>();
 
     public Accounts() { }

@@ -7,6 +7,8 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
@@ -15,6 +17,16 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="900.0" stylesheets="@../resources/css/loginRegister.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.loginRegisterController">
    <children>
+      <Pane fx:id="loginPoster" prefHeight="600.0" prefWidth="950.0">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="950.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/bg/loginPoster.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="255.0" layoutY="489.0" mnemonicParsing="false" onAction="#logout" prefHeight="33.0" prefWidth="125.0" text="LOG OUT " />
+         </children>
+      </Pane>
       <Pane prefHeight="600.0" prefWidth="475.0" style="-fx-background-color: #24252a;">
          <children>
             <VBox layoutX="100.0" layoutY="200.0" prefHeight="120.0" prefWidth="275.0">

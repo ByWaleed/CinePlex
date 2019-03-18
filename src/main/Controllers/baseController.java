@@ -32,21 +32,26 @@ public class baseController implements Initializable {
     private static ArrayList<Seat> seats;
 
     private static ArrayList<Movie> movies;
-
     private static Movie selectedMovie;
+
+    private static ArrayList<Snack> snacks;
+    private static Snack selectedSnack;
 
     private static Cart cart = new Cart();
 
+    private static ArrayList<Payment> payments = new ArrayList<>(0);
+
+    private static ArrayList<Booking> bookings = new ArrayList<>(0);
+    private static ArrayList<BookingItem> bookingItems= new ArrayList<>(0);
 
     // Navigation Buttons
     @FXML private Button moviesBtn;
     @FXML private Button snacksBtn;
-    @FXML private Button theatresBtn;
+    @FXML private Button bookingsBtn;
     @FXML private Button cartBtn;
     @FXML private Button loginRegisterBtn;
 
     @FXML private Pane mainContentPane;
-
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -70,42 +75,29 @@ public class baseController implements Initializable {
     public void navigation(ActionEvent actionEvent) {
 
         Object source = actionEvent.getSource();
-        System.out.println(source);
 
         if (source.equals(moviesBtn)) {
             loadUI("/main/views/movies.fxml");
 
         } else if (source.equals(snacksBtn)) {
-            System.out.println("Snacks pane selected");
+            loadUI("/main/views/snacks.fxml");
 
-        } else if (source.equals(theatresBtn)) {
-            System.out.println("Theatres pane selected");
+        } else if (source.equals(bookingsBtn)) {
+            if (loggedInUser != null) {
+                loadUI("/main/views/bookings.fxml");
+            } else {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Account Login Warning");
+                alert.setHeaderText(null);
+                alert.setContentText("\nPlease login first, then you can see your orders.");
+                alert.showAndWait();
+            }
 
-        } else if (actionEvent.getSource() ==  cartBtn){
+        } else if (actionEvent.getSource().equals(cartBtn)){
             loadUI("/main/views/cart.fxml");
 
         } else if (source.equals(loginRegisterBtn)) {
-            if (loggedInUser == null){
-                loadUI("/main/views/loginRegister.fxml");
-            } else {
-                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-                alert.setTitle("Account Login Warning");
-                alert.setHeaderText("Looks like you are already logged in.");
-                alert.setContentText("Do you wish to logout?");
-
-                ButtonType logoutBtn = new ButtonType("Logout");
-                ButtonType noLogoutBtn = new ButtonType("Stay Logged In");
-
-                alert.getButtonTypes().setAll(logoutBtn, noLogoutBtn);
-
-                Optional<ButtonType> result = alert.showAndWait();
-                if (result.get() == logoutBtn){
-                    loggedInUser = null;
-                    loadUI("/main/views/loginRegister.fxml");
-                } else {
-                    System.out.println("Ok, np.");
-                }
-            }
+            loadUI("/main/views/loginRegister.fxml");
         }
     }
 
@@ -185,11 +177,63 @@ public class baseController implements Initializable {
         baseController.movies = movies;
     }
 
+    public static ArrayList<Snack> getSnacks() {
+        return snacks;
+    }
+
+    public static void setSnacks(ArrayList<Snack> snacks) {
+        baseController.snacks = snacks;
+    }
+
+    public static Snack getSelectedSnack() {
+        return selectedSnack;
+    }
+
+    public static void setSelectedSnack(Snack selectedSnack) {
+        baseController.selectedSnack = selectedSnack;
+    }
+
     public static Cart getCart() {
         return cart;
     }
 
     public static void setCart(Cart cart) {
         baseController.cart = cart;
+    }
+
+    public static ArrayList<Booking> getBookings() {
+        return bookings;
+    }
+
+    public static void setBookings(ArrayList<Booking> bookings) {
+        baseController.bookings = bookings;
+    }
+
+    public static Integer generateBookingId() {
+        return bookings.size() + 1;
+    }
+
+    public static ArrayList<Payment> getPayments() {
+        return payments;
+    }
+
+    public static void setPayments(ArrayList<Payment> payments) {
+        baseController.payments = payments;
+    }
+
+    public static Integer generatePaymentId() {
+        return payments.size() + 1;
+    }
+
+    public static ArrayList<BookingItem> getBookingItems() {
+        return bookingItems;
+    }
+
+    public static void setBookingItems(ArrayList<BookingItem> bookingItems) {
+        baseController.bookingItems = bookingItems;
+    }
+
+    public static void addBookingItem(BookingItem item) {
+        bookingItems.add(item);
     }
 }

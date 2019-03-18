@@ -25,6 +25,14 @@ public class CartItem {
         this.seatid = seatID;
     }
 
+    public CartItem(Integer itemId, String itemName, Double itemPrice) {
+        this.itemId = itemId;
+        this.itemType = "Snack";
+        this.itemName = itemName;
+        this.itemPrice = itemPrice;
+        this.seatid = null;
+    }
+
     public Integer getItemId() {
         return itemId;
     }

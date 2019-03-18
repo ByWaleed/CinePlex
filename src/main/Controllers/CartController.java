@@ -14,15 +14,13 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.layout.Pane;
 import javafx.util.Callback;
-import main.Cart;
-import main.CartItem;
-import main.CartScreenItem;
-import main.ReservedSeat;
+import main.*;
 
 import java.awt.*;
 import java.awt.Button;
 import java.io.IOException;
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.ResourceBundle;
@@ -43,7 +41,7 @@ public class CartController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        dummyCartItems();
+        //dummyCartItems();
 
         generateCartScreenItems();
 
@@ -71,20 +69,24 @@ public class CartController implements Initializable {
 
                     tableRows.set(existingItem, cartItem); // Update table row
 
-                    // Otherwise, add new row table row
+                // Otherwise, add new row table row
                 } else {
                     if (item.getItemType().equals("Movie")) {
                         tableRows.add(new CartScreenItem(
-                                item.getItemId(),
-                                "N/A",
-                                "N/A",
+                                tableRows.size(),
                                 item.getItemName(),
                                 1,
                                 item.getItemPrice(),
                                 item.getItemPrice()
                         ));
                     } else {
-                        System.out.println("Item is not a movie" + item.getItemName());
+                        tableRows.add(new CartScreenItem(
+                                tableRows.size(),
+                                item.getItemName(),
+                                1,
+                                item.getItemPrice(),
+                                item.getItemPrice()
+                        ));
                     }
                 }
             }
@@ -112,7 +114,7 @@ public class CartController implements Initializable {
     private Integer itemAdded(CartItem item) {
         Integer counter = 0;
         for (CartScreenItem addedItem : tableRows) {
-            if (addedItem.getId().equals(item.getItemId())) {
+            if (addedItem.getName().equals(item.getItemName())) {
                 return counter;
             }
             counter++;
@@ -123,19 +125,19 @@ public class CartController implements Initializable {
     public static void reduceQuantity(ActionEvent event) {
         Integer rowItemId = Integer.parseInt(((Control)event.getSource()).getId());
 
-        // Remove item from Cart
-        CartItem cartRowItem = itemInCart(rowItemId);
-        userCart.remove(cartRowItem);
-        baseController.getCart().setCart(userCart);
-
         // Reduce Quantity or Remove Row
-        CartScreenItem rowItem = itemInTable(rowItemId);
+        CartScreenItem rowItem = tableRows.get(rowItemId);
         if (rowItem.getQuantity() > 1) {
             rowItem.setQuantity(rowItem.getQuantity() - 1);
             tableRows.set(itemInTableIndex(rowItemId), rowItem);
         } else {
             tableRows.remove(rowItem);
         }
+
+        // Remove item from Cart
+        CartItem cartRowItem = itemInCart(rowItem.getName());
+        userCart.remove(cartRowItem);
+        baseController.getCart().setCart(userCart);
 
         // Update ObservableArrayList
         tableRowsOL = FXCollections.observableArrayList(tableRows);
@@ -151,9 +153,9 @@ public class CartController implements Initializable {
         }*/
     }
 
-    private static CartItem itemInCart(Integer itemID) {
+    private static CartItem itemInCart(String name) {
         for (CartItem item : userCart) {
-            if (item.getItemId().equals(itemID)) {
+            if (item.getItemName().equals(name)) {
                 return item;
             }
         }
@@ -178,5 +180,99 @@ public class CartController implements Initializable {
             count++;
         }
         return null;
+    }
+
+    @FXML void cashPayment() {
+        if (tableRows.size() > 0) {
+            Integer userId = null;
+            if (baseController.getLoggedInUser() != null) {
+                userId = baseController.getLoggedInUser().getId();
+            }
+
+            // Create Booking
+            Booking order = new Booking(
+                    userId,
+                    baseController.generateBookingId(),
+                    null,
+                    LocalDate.now(),
+                    "Cash"
+            );
+
+            // Create Booking Items (linked by bookingId)
+            ArrayList<CartItem> addedItems = new ArrayList<>(0);
+            for (CartItem item : userCart) {
+                if (!arrayContainsItem(addedItems, item)) {
+                    addedItems.add(item);
+                    Integer quantity = getItemQuantity(addedItems, item);
+                    baseController.addBookingItem(new BookingItem(
+                            order.getBookingId(),
+                            item.getItemId(),
+                            item.getItemType(),
+                            item.getSeatid(),
+                            item.getItemName(),
+                            item.getItemPrice(),
+                            quantity
+                    ));
+                } else {
+                    System.out.println("Item quantity already added: " + item);
+                }
+            }
+
+            cashOrderConfirmation(order.getBookingId());
+            userCart.clear();
+            tableRows.clear();
+            tableRowsOL.clear();
+        } else {
+            emptyCartError();
+        }
+    }
+
+    private Integer getItemQuantity(ArrayList<CartItem> addedItems, CartItem item) {
+        Integer quantity = 1;
+        for (CartItem i : addedItems) {
+            if (i.getItemName() == item.getItemName()) {
+                quantity++;
+            }
+        }
+        return quantity;
+    }
+
+    private ArrayList<CartItem> removeQuantity(ArrayList<CartItem> addedItems, CartItem item) {
+        ArrayList<CartItem> temp = new ArrayList<>(0);
+        for (CartItem i : addedItems) {
+            if (i.getItemName() == item.getItemName()) {
+
+            }
+        }
+        return temp;
+    }
+
+    @FXML void cardPayment() {
+        System.out.println("Cash Payment");
+    }
+
+    private void emptyCartError() {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Cinema Booking System");
+        alert.setHeaderText("Empty Cart");
+        alert.setContentText("Please add some items in your cart first.");
+        alert.showAndWait();
+    }
+
+    private void cashOrderConfirmation(Integer orderId) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Cinema Booking System");
+        alert.setHeaderText("Your Number is #" + orderId);
+        alert.setContentText("Your order is reserved & will be printed. \nPlease pay before entrance to Cinema Theatre.");
+        alert.showAndWait();
+    }
+
+    private Boolean arrayContainsItem(ArrayList<CartItem> list, CartItem item) {
+        for (CartItem i : list) {
+            if (i.getItemName() == item.getItemName()) {
+                return true;
+            }
+        }
+        return false;
     }
 }
