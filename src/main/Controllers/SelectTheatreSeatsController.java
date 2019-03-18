@@ -60,6 +60,12 @@ public class SelectTheatreSeatsController implements Initializable {
         // Hide Seats Grid
         seatsGridContainer.setVisible(false);
 
+        // Reset Display Objects
+        totalSeatsPrice.setText("£0.00");
+        reservedSeats.clear();
+        selectedSeats.clear();
+        timeForSessions.clear();
+
         Movie selectedMovie = baseController.getSelectedMovie();
 
         ArrayList<Session> sessions = baseController.getSessions();
@@ -129,7 +135,7 @@ public class SelectTheatreSeatsController implements Initializable {
             // Selected Session, to get selected theatre id
             Session selectedSession = baseController.getSessions().get(availableTimesLV.getSelectionModel().getSelectedIndex());
 
-            // Addd seats as buttons (plus event hanlers)
+            // Add seats as buttons (plus event hanlers)
             for (Seat seat : seats) {
                 if (seat.getTheatreId().equals(selectedSession.getTheatreId())) {
                     Integer x = (int) seat.getLocation().getX();
@@ -138,6 +144,10 @@ public class SelectTheatreSeatsController implements Initializable {
                     /* Coordinates flipped to keep consistent with (x,y) as
                      *  JavaFx flips the coordinates of the Grid. */
                     Button button = new Button("Available");
+                    if (seatReserved(seat)) {
+                        button.setText("Reserved");
+                        button.setDisable(true);
+                    }
                     button.setId("" + seat.getId());
                     button.setOnAction(this::seatSelected);
                     seatsGrid.add(button, x, y);
@@ -154,10 +164,24 @@ public class SelectTheatreSeatsController implements Initializable {
         }
     }
 
+    private Boolean seatReserved(Seat seat) {
+        ArrayList<BookingItem> bookingItems = baseController.getBookingItems();
+        bookingItems.addAll(CartController.getQuantityItems());
+
+        for (BookingItem item : bookingItems) {
+            if (item.getSeatId() == seat.getId()) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     @FXML void seatSelected(ActionEvent event){
         ArrayList<Seat> seats = baseController.getSeats();
         Button selectedButton = (Button)event.getSource();
         String selectedSeatId = ((Control)event.getSource()).getId();
+
         Seat selectedSeat = seats.get(Integer.parseInt(selectedSeatId) - 1);
 
         if (selectedSeats.contains(selectedSeat)) {

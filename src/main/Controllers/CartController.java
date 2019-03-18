@@ -46,6 +46,8 @@ public class CartController implements Initializable {
 
     private static baseController baseControllerObject = null;
 
+    private static ArrayList<BookingItem> quantityItems = new ArrayList<>(0);
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         //dummyCartItems();
@@ -149,18 +151,6 @@ public class CartController implements Initializable {
         // Update ObservableArrayList
         tableRowsOL = FXCollections.observableArrayList(tableRows);
 
-        // Refresh table ???
-        ObservableList<CartScreenItem> temp = tableRowsOL;
-
-        //tableRowsOL = temp;
-
-        /*for (CartScreenItem item : tableRows) {
-            System.out.println(item);
-        }
-
-        for (CartScreenItem item : tableRowsOL) {
-            System.out.println(item);
-        }*/
         baseControllerObject.reloadCart();
     }
 
@@ -225,7 +215,16 @@ public class CartController implements Initializable {
                             quantity
                     ));
                 } else {
-                    System.out.println("Item quantity already added: " + item);
+                    quantityItems.add(new BookingItem(
+                            order.getBookingId(),
+                            item.getItemId(),
+                            item.getItemType(),
+                            item.getSeatid(),
+                            item.getItemName(),
+                            item.getItemPrice(),
+                            1
+                    ));
+                    System.out.println("Add more quantity to  " + item);
                 }
             }
 
@@ -303,5 +302,9 @@ public class CartController implements Initializable {
 
     public static void setBaseControllerObject(baseController object) {
         CartController.baseControllerObject = object;
+    }
+
+    public static ArrayList<BookingItem> getQuantityItems() {
+        return quantityItems;
     }
 }
