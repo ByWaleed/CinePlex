@@ -6,8 +6,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/Controllers/CardPaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Controllers/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/CartController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Controllers/baseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/baseController.java" afterDir="false" />
     </list>
@@ -68,11 +66,15 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/Controllers/baseController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2652">
-                  <caret line="235" column="42" selection-start-line="235" selection-start-column="42" selection-end-line="235" selection-end-column="42" />
+                <state relative-caret-position="289">
+                  <caret line="103" column="12" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="12" />
+                  <folding>
+                    <element signature="e#3168#3169#0" expanded="true" />
+                    <element signature="e#3198#3199#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -80,17 +82,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/Controllers/BookingsController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+                <state relative-caret-position="646">
+                  <caret line="53" column="45" lean-forward="true" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/Controllers/CartController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+                <state relative-caret-position="211">
+                  <caret line="163" column="28" selection-start-line="163" selection-start-column="28" selection-end-line="163" selection-end-column="28" />
                   <folding>
                     <element signature="method#initialize#0;class#CartController#0" />
                     <element signature="method#generateCartScreenItems#0;class#CartController#0" />
@@ -105,7 +107,6 @@
                     <element signature="method#itemAdded#0;class#CartController#0" />
                     <element signature="e#4430#4576#1" />
                     <element signature="e#4496#4543#1" />
-                    <element signature="method#reduceQuantity#0;class#CartController#0" />
                     <element signature="e#4888#5024#1" />
                     <element signature="e#5030#5080#1" />
                     <element signature="method#itemInCart#0;class#CartController#0" />
@@ -118,23 +119,27 @@
                     <element signature="e#6213#6336#1" />
                     <element signature="e#6260#6305#1" />
                     <element signature="method#cashPayment#0;class#CartController#0" />
+                    <element signature="e#6430#7858#1" />
                     <element signature="e#6525#6607#1" />
                     <element signature="e#7036#7765#1" />
                     <element signature="e#7096#7646#1" />
                     <element signature="e#7652#7751#1" />
+                    <element signature="e#7864#7905#1" />
                     <element signature="method#getItemQuantity#0;class#CartController#0" />
-                    <element signature="e#8135#8245#1" />
-                    <element signature="e#8192#8235#1" />
-                    <element signature="method#removeQuantity#0;class#CartController#0" />
-                    <element signature="e#8467#8550#1" />
+                    <element signature="e#8066#8176#1" />
+                    <element signature="e#8123#8166#1" />
                     <element signature="method#cardPayment#0;class#CartController#0" />
-                    <element signature="e#8662#8703#1" />
+                    <element signature="e#8593#8634#1" />
+                    <element signature="e#8686#8744#1" />
+                    <element signature="e#9197#9249#0" />
                     <element signature="method#emptyCartError#0;class#CartController#0" />
                     <element signature="method#emptyCart#0;class#CartController#0" />
                     <element signature="method#cashOrderConfirmation#0;class#CartController#0" />
                     <element signature="method#arrayContainsItem#0;class#CartController#0" />
-                    <element signature="e#10355#10466#1" />
-                    <element signature="e#10412#10456#1" />
+                    <element signature="e#10444#10555#1" />
+                    <element signature="e#10501#10545#1" />
+                    <element signature="e#10551#10552#0" expanded="true" />
+                    <element signature="e#10605#10606#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -147,12 +152,10 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/Controllers/CardPaymentController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="338">
-                  <caret line="75" column="54" lean-forward="true" selection-start-line="75" selection-start-column="54" selection-end-line="75" selection-end-column="54" />
+                <state relative-caret-position="743">
+                  <caret line="102" column="37" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
                   <folding>
                     <element signature="method#fieldError#0;class#CardPaymentController#0" />
-                    <element signature="e#3813#3814#0" expanded="true" />
-                    <element signature="e#3855#3856#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -194,6 +197,8 @@
       <find>window</find>
       <find>loader</find>
       <find>Loader</find>
+      <find>remove</find>
+      <find>cardpay</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -225,9 +230,9 @@
         <option value="$PROJECT_DIR$/src/main/Booking.java" />
         <option value="$PROJECT_DIR$/src/main/BookingItem.java" />
         <option value="$PROJECT_DIR$/src/main/Controllers/BookingsController.java" />
-        <option value="$PROJECT_DIR$/src/main/Controllers/baseController.java" />
-        <option value="$PROJECT_DIR$/src/main/Controllers/CartController.java" />
         <option value="$PROJECT_DIR$/src/main/Controllers/CardPaymentController.java" />
+        <option value="$PROJECT_DIR$/src/main/Controllers/CartController.java" />
+        <option value="$PROJECT_DIR$/src/main/Controllers/baseController.java" />
       </list>
     </option>
   </component>
@@ -247,6 +252,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,7 +290,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -297,7 +302,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552903418673" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552913670805" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -414,16 +419,18 @@
       <workItem from="1552834187469" duration="27654000" />
       <workItem from="1552900254291" duration="3199000" />
       <workItem from="1552903990364" duration="2876000" />
+      <workItem from="1552911033052" duration="2633000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74007000" />
+    <option name="totallyTimeSpent" value="76640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.1401919" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.14179105" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -432,8 +439,8 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32901832" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29126215" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.27974278" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.12944984" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2793959" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -541,12 +548,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/views/movie.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="29" column="64" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -626,8 +633,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/views/loginRegister.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Controllers/loginRegisterController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -689,12 +696,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/views/bookings.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/CartScreenItem.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -750,13 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Controllers/baseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2652">
-          <caret line="235" column="42" selection-start-line="235" selection-start-column="42" selection-end-line="235" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Controllers/SelectTheatreSeatsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="381">
@@ -764,29 +764,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Controllers/BookingsController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Controllers/CardPaymentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        <state relative-caret-position="743">
+          <caret line="102" column="37" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
+          <folding>
+            <element signature="method#fieldError#0;class#CardPaymentController#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Controllers/CardPaymentController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Controllers/BookingsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="75" column="54" lean-forward="true" selection-start-line="75" selection-start-column="54" selection-end-line="75" selection-end-column="54" />
-          <folding>
-            <element signature="method#fieldError#0;class#CardPaymentController#0" />
-            <element signature="e#3813#3814#0" expanded="true" />
-            <element signature="e#3855#3856#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="646">
+          <caret line="53" column="45" lean-forward="true" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Controllers/CartController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        <state relative-caret-position="211">
+          <caret line="163" column="28" selection-start-line="163" selection-start-column="28" selection-end-line="163" selection-end-column="28" />
           <folding>
             <element signature="method#initialize#0;class#CartController#0" />
             <element signature="method#generateCartScreenItems#0;class#CartController#0" />
@@ -801,7 +799,6 @@
             <element signature="method#itemAdded#0;class#CartController#0" />
             <element signature="e#4430#4576#1" />
             <element signature="e#4496#4543#1" />
-            <element signature="method#reduceQuantity#0;class#CartController#0" />
             <element signature="e#4888#5024#1" />
             <element signature="e#5030#5080#1" />
             <element signature="method#itemInCart#0;class#CartController#0" />
@@ -814,23 +811,38 @@
             <element signature="e#6213#6336#1" />
             <element signature="e#6260#6305#1" />
             <element signature="method#cashPayment#0;class#CartController#0" />
+            <element signature="e#6430#7858#1" />
             <element signature="e#6525#6607#1" />
             <element signature="e#7036#7765#1" />
             <element signature="e#7096#7646#1" />
             <element signature="e#7652#7751#1" />
+            <element signature="e#7864#7905#1" />
             <element signature="method#getItemQuantity#0;class#CartController#0" />
-            <element signature="e#8135#8245#1" />
-            <element signature="e#8192#8235#1" />
-            <element signature="method#removeQuantity#0;class#CartController#0" />
-            <element signature="e#8467#8550#1" />
+            <element signature="e#8066#8176#1" />
+            <element signature="e#8123#8166#1" />
             <element signature="method#cardPayment#0;class#CartController#0" />
-            <element signature="e#8662#8703#1" />
+            <element signature="e#8593#8634#1" />
+            <element signature="e#8686#8744#1" />
+            <element signature="e#9197#9249#0" />
             <element signature="method#emptyCartError#0;class#CartController#0" />
             <element signature="method#emptyCart#0;class#CartController#0" />
             <element signature="method#cashOrderConfirmation#0;class#CartController#0" />
             <element signature="method#arrayContainsItem#0;class#CartController#0" />
-            <element signature="e#10355#10466#1" />
-            <element signature="e#10412#10456#1" />
+            <element signature="e#10444#10555#1" />
+            <element signature="e#10501#10545#1" />
+            <element signature="e#10551#10552#0" expanded="true" />
+            <element signature="e#10605#10606#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Controllers/baseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="103" column="12" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="12" />
+          <folding>
+            <element signature="e#3168#3169#0" expanded="true" />
+            <element signature="e#3198#3199#0" expanded="true" />
           </folding>
         </state>
       </provider>

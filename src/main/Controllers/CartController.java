@@ -44,6 +44,8 @@ public class CartController implements Initializable {
 
     private static ObservableList<CartScreenItem> tableRowsOL;
 
+    private static baseController baseControllerObject = null;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         //dummyCartItems();
@@ -148,6 +150,9 @@ public class CartController implements Initializable {
         tableRowsOL = FXCollections.observableArrayList(tableRows);
 
         // Refresh table ???
+        ObservableList<CartScreenItem> temp = tableRowsOL;
+
+        //tableRowsOL = temp;
 
         /*for (CartScreenItem item : tableRows) {
             System.out.println(item);
@@ -156,6 +161,7 @@ public class CartController implements Initializable {
         for (CartScreenItem item : tableRowsOL) {
             System.out.println(item);
         }*/
+        baseControllerObject.reloadCart();
     }
 
     private static CartItem itemInCart(String name) {
@@ -240,16 +246,6 @@ public class CartController implements Initializable {
         return quantity;
     }
 
-    private ArrayList<CartItem> removeQuantity(ArrayList<CartItem> addedItems, CartItem item) {
-        ArrayList<CartItem> temp = new ArrayList<>(0);
-        for (CartItem i : addedItems) {
-            if (i.getItemName() == item.getItemName()) {
-
-            }
-        }
-        return temp;
-    }
-
     @FXML void cardPayment(ActionEvent event) {
         if (tableRows.size() == 0) {
             emptyCartError();
@@ -303,5 +299,9 @@ public class CartController implements Initializable {
             }
         }
         return false;
+    }
+
+    public static void setBaseControllerObject(baseController object) {
+        CartController.baseControllerObject = object;
     }
 }

@@ -6,6 +6,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -90,11 +92,17 @@ public class baseController implements Initializable {
             }
 
         } else if (actionEvent.getSource().equals(cartBtn)){
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/main/views/cardPayment.fxml"));
+            CartController.setBaseControllerObject(this);
             loadUI("/main/views/cart.fxml");
 
         } else if (source.equals(loginRegisterBtn)) {
             loadUI("/main/views/loginRegister.fxml");
         }
+    }
+
+    public void reloadCart() {
+        cartBtn.fire();
     }
 
     private void loadUI(String resourceName) {
