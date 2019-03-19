@@ -58,4 +58,15 @@ public class Session {
     public void setEndtime(LocalTime endtime) {
         this.endtime = endtime;
     }
+
+    @Override
+    public String toString() {
+        return "Session{" +
+                "id=" + id +
+                ", movieId=" + movieId +
+                ", theatreId=" + theatreId +
+                ", startTime=" + startTime +
+                ", endtime=" + endtime +
+                '}';
+    }
 }

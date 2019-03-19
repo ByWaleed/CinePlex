@@ -183,6 +183,7 @@ public class CartController implements Initializable {
         return null;
     }
 
+    // TODO: Get many more table rows when 3xTerminator & 4xAvengers is chosen
     @FXML void cashPayment() {
         if (tableRows.size() > 0) {
             Integer userId = null;
@@ -203,8 +204,9 @@ public class CartController implements Initializable {
             ArrayList<CartItem> addedItems = new ArrayList<>(0);
             for (CartItem item : userCart) {
                 if (!arrayContainsItem(addedItems, item)) {
+                    System.out.println(item);
                     addedItems.add(item);
-                    Integer quantity = getItemQuantity(addedItems, item);
+                    Integer quantity = getItemQuantity(userCart, item);
                     baseController.addBookingItem(new BookingItem(
                             order.getBookingId(),
                             item.getItemId(),
@@ -224,7 +226,7 @@ public class CartController implements Initializable {
                             item.getItemPrice(),
                             1
                     ));
-                    System.out.println("Add more quantity to  " + item);
+                    /*System.out.println("Add more quantity to  " + item);*/
                 }
             }
 
@@ -236,7 +238,7 @@ public class CartController implements Initializable {
     }
 
     private Integer getItemQuantity(ArrayList<CartItem> addedItems, CartItem item) {
-        Integer quantity = 1;
+        Integer quantity = 0;
         for (CartItem i : addedItems) {
             if (i.getItemName() == item.getItemName()) {
                 quantity++;
@@ -293,7 +295,7 @@ public class CartController implements Initializable {
 
     private Boolean arrayContainsItem(ArrayList<CartItem> list, CartItem item) {
         for (CartItem i : list) {
-            if (i.getItemName() == item.getItemName()) {
+            if (i.getItemName().equalsIgnoreCase(item.getItemName())) {
                 return true;
             }
         }

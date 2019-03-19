@@ -54,6 +54,8 @@ public class SelectTheatreSeatsController implements Initializable {
     private ArrayList<Seat> selectedSeats = new ArrayList<>(0);
     private ArrayList<Session> timeForSessions = new ArrayList<>(0);
 
+    private ArrayList<Session> availableSessions = new ArrayList<>(0);
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -75,12 +77,13 @@ public class SelectTheatreSeatsController implements Initializable {
         ArrayList<Theatre> movieInTheatres = new ArrayList<>(0);
         for (Session session : sessions) {
             if (session.getMovieId().equals(selectedMovie.getId())) {
+                availableSessions.add(session);
                 movieInTheatres.add(theatres.get(session.getTheatreId() - 1));
             }
         }
 
         // Remove duplicated theatre listing: https://stackoverflow.com/a/40419515
-        movieInTheatres = new ArrayList<Theatre>(new LinkedHashSet<>(movieInTheatres));
+        movieInTheatres = new ArrayList<>(new LinkedHashSet<>(movieInTheatres));
 
         // Add theatres in combobox
         ObservableList<Theatre> theatresOL = FXCollections.observableArrayList(movieInTheatres);
@@ -108,7 +111,13 @@ public class SelectTheatreSeatsController implements Initializable {
             selectedSeatsTV.getItems().clear();
 
             for (Session session : sessions) {
-                if ((session.getTheatreId() -1) == ov.getValue().getId() - 1) {
+
+                Integer selectedTheatreIndex = ov.getValue().getId() - 1;
+                Theatre selectedTheatre = baseController.getTheatres().get(selectedTheatreIndex);
+
+                // Session with same movieId and theatreId
+                if (session.getTheatreId().equals(selectedTheatre.getId()) && session.getMovieId().equals(selectedMovie.getId()) )  {
+                    System.out.println("Confirmed: " + session);
                     availableTimesOL.add(session.getStartTime() + " - " + session.getEndtime());
                     timeForSessions.add(session);
                 }
@@ -126,14 +135,16 @@ public class SelectTheatreSeatsController implements Initializable {
             seatsGridContainer.setVisible(false);
             errorMessage("Opps... an error occurred", "Please select a theatre and available time.");
         } else {
-            // Get seats of the selected theatre
-            ArrayList<Seat> seats = baseController.getSeats();
-
             // generate grid in gridContainer
             GridPane seatsGrid = new GridPane();
 
             // Selected Session, to get selected theatre id
-            Session selectedSession = baseController.getSessions().get(availableTimesLV.getSelectionModel().getSelectedIndex());
+            Integer selectedSessionIndex = availableTimesLV.getSelectionModel().getSelectedIndex();
+            Session selectedSession = availableSessions.get(selectedSessionIndex);
+
+            // Get seats of the selected theatre
+            System.out.println("Session:" + selectedSession);
+            ArrayList<Seat> seats = baseController.getTheatreSeats(selectedSession.getTheatreId());
 
             // Add seats as buttons (plus event hanlers)
             for (Seat seat : seats) {
@@ -145,7 +156,7 @@ public class SelectTheatreSeatsController implements Initializable {
                      *  JavaFx flips the coordinates of the Grid. */
                     Button button = new Button("Available");
                     if (seatReserved(seat)) {
-                        button.setText("Reserved");
+                        //button.setText("Reserved");
                         button.setDisable(true);
                     }
                     button.setId("" + seat.getId());
@@ -183,6 +194,7 @@ public class SelectTheatreSeatsController implements Initializable {
         String selectedSeatId = ((Control)event.getSource()).getId();
 
         Seat selectedSeat = seats.get(Integer.parseInt(selectedSeatId) - 1);
+        System.out.println("Selected Seat: " + selectedSeat.getId());
 
         if (selectedSeats.contains(selectedSeat)) {
             selectedButton.setText("Available");

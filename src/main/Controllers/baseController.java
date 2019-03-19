@@ -169,6 +169,18 @@ public class baseController implements Initializable {
         return seats;
     }
 
+    public static ArrayList<Seat> getTheatreSeats(Integer theatreId) {
+        System.out.println("Seats for Theatre " + theatreId);
+        ArrayList<Seat> theatreSeats = new ArrayList<>(0);
+        for (Seat seat : seats) {
+            if (seat.getTheatreId().equals(theatreId)) {
+                theatreSeats.add(seat);
+            }
+        }
+        System.out.println(theatreSeats);
+        return theatreSeats;
+    }
+
     public static void setSeats(ArrayList<Seat> seats) {
         baseController.seats = seats;
     }
