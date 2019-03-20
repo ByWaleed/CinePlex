@@ -182,8 +182,11 @@ public class SelectTheatreSeatsController implements Initializable {
         bookingItems.addAll(CartController.getQuantityItems());
 
         for (BookingItem item : bookingItems) {
-            if (item.getSeatId().equals(seat.getId())) {
-                return true;
+            // If not Snack
+            if (item.getSeatId() != null) {
+                if (item.getSeatId().equals(seat.getId())) {
+                    return true;
+                }
             }
         }
 
