@@ -32,6 +32,7 @@ import java.util.stream.Collectors;
 
 import static com.sun.org.apache.bcel.internal.generic.InstructionConstants.POP;
 import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Int;
+import static javafx.scene.input.KeyCode.N;
 
 public class SelectTheatreSeatsController implements Initializable {
 
@@ -176,11 +177,12 @@ public class SelectTheatreSeatsController implements Initializable {
     }
 
     private Boolean seatReserved(Seat seat) {
-        ArrayList<BookingItem> bookingItems = baseController.getBookingItems();
+        ArrayList<BookingItem> bookingItems = new ArrayList<>(0);
+        bookingItems.addAll(baseController.getBookingItems());
         bookingItems.addAll(CartController.getQuantityItems());
 
         for (BookingItem item : bookingItems) {
-            if (item.getSeatId() == seat.getId()) {
+            if (item.getSeatId().equals(seat.getId())) {
                 return true;
             }
         }

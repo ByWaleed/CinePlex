@@ -183,7 +183,6 @@ public class CartController implements Initializable {
         return null;
     }
 
-    // TODO: Get many more table rows when 3xTerminator & 4xAvengers is chosen
     @FXML void cashPayment() {
         if (tableRows.size() > 0) {
             Integer userId = null;

@@ -73,7 +73,7 @@ public abstract class User {
     // SETTERS & other methods
     private boolean validName(String name) {
         if (name.length() > 1) {
-            return true;
+            return name.matches( "[a-zA-Z][a-zA-Z]*" );
         } else {
             return false;
         }
