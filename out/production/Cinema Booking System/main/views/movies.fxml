@@ -7,7 +7,7 @@
    <children>
       <ScrollPane fx:id="allMoviesSP" prefHeight="600.0" prefWidth="950.0">
          <content>
-            <AnchorPane fx:id="allMoviesPane" prefHeight="600.0" prefWidth="950.0" style="-fx-background-image: url(&quot;file:main/resources/images/movies/bg.jpg&quot;);" />
+            <AnchorPane fx:id="allMoviesPane" prefHeight="600.0" prefWidth="950.0" />
          </content>
       </ScrollPane>
    </children>

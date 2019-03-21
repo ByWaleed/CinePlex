@@ -16,12 +16,14 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.image.Image;
 import javafx.scene.layout.Priority;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.StringConverter;
 import main.*;
 
+import javax.swing.text.html.ImageView;
 import java.awt.*;
 import java.lang.reflect.Array;
 import java.net.URL;
@@ -118,7 +120,6 @@ public class SelectTheatreSeatsController implements Initializable {
 
                 // Session with same movieId and theatreId
                 if (session.getTheatreId().equals(selectedTheatre.getId()) && session.getMovieId().equals(selectedMovie.getId()) )  {
-                    System.out.println("Confirmed: " + session);
                     availableTimesOL.add(session.getStartTime() + " - " + session.getEndtime());
                     timeForSessions.add(session);
                 }
@@ -144,10 +145,9 @@ public class SelectTheatreSeatsController implements Initializable {
             Session selectedSession = availableSessions.get(selectedSessionIndex);
 
             // Get seats of the selected theatre
-            System.out.println("Session:" + selectedSession);
             ArrayList<Seat> seats = baseController.getTheatreSeats(selectedSession.getTheatreId());
 
-            // Add seats as buttons (plus event hanlers)
+            // Add seats as buttons (plus event handlers)
             for (Seat seat : seats) {
                 if (seat.getTheatreId().equals(selectedSession.getTheatreId())) {
                     Integer x = (int) seat.getLocation().getX();
@@ -157,7 +157,7 @@ public class SelectTheatreSeatsController implements Initializable {
                      *  JavaFx flips the coordinates of the Grid. */
                     Button button = new Button("Available");
                     if (seatReserved(seat)) {
-                        //button.setText("Reserved");
+                        button.setText("Reserved");
                         button.setDisable(true);
                     }
                     button.setId("" + seat.getId());
@@ -199,7 +199,6 @@ public class SelectTheatreSeatsController implements Initializable {
         String selectedSeatId = ((Control)event.getSource()).getId();
 
         Seat selectedSeat = seats.get(Integer.parseInt(selectedSeatId) - 1);
-        System.out.println("Selected Seat: " + selectedSeat.getId());
 
         if (selectedSeats.contains(selectedSeat)) {
             selectedButton.setText("Available");

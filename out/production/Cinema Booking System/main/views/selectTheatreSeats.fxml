@@ -5,6 +5,8 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
@@ -27,15 +29,30 @@
       <Pane layoutX="275.0" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #383838;">
          <children>
             <Pane fx:id="seatsGridContainer" layoutY="50.0" prefHeight="354.0" prefWidth="600.0" />
-            <Text fill="WHITE" layoutX="226.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECT SEATS">
+            <Text fill="WHITE" layoutX="201.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SEATS SELECTION">
                <font>
                   <Font size="25.0" />
                </font>
             </Text>
-            <Text fill="#10b23e" layoutX="393.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INFO: All tickets &amp; seats are suitable for children and adults." wrappingWidth="200.0" />
-            <Text fill="#10b23e" layoutX="65.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AVAILABLE" />
-            <Text fill="#10b23e" layoutX="65.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECTED" />
-            <Text fill="#10b23e" layoutX="65.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOT AVAILABLE" />
+            <Text fill="WHITE" layoutX="380.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All tickets/seats are suitable for adults &amp; children. There is no different between the prices as well." textAlignment="CENTER" wrappingWidth="200.0" />
+            <Text fill="#10aef7" layoutX="44.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AVAILABLE" />
+            <Text fill="#1026f7" layoutX="44.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECTED" />
+            <Text fill="#db4f38" layoutX="44.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RESERVED" />
+            <ImageView fitHeight="20.0" fitWidth="19.0" layoutX="20.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/seats/available.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="19.0" layoutX="20.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/seats/selected.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="19.0" layoutX="20.0" layoutY="468.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/seats/reserved.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
       <Pane layoutX="875.0" prefHeight="500.0" prefWidth="300.0" style="-fx-border-color: #fff; -fx-background-color: #383838;">
