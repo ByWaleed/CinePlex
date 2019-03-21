@@ -7,12 +7,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/bookings.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/bookings.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BookingItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BookingItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Controllers/BookingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/BookingsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Controllers/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/CartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/views/bookings.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/views/bookings.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,55 +68,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Controllers/BookingsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="77" column="39" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
+            <state relative-caret-position="631">
+              <caret line="81" column="44" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="44" />
               <folding>
-                <element signature="method#initialize#0;class#BookingsController#0" />
                 <element signature="e#1460#1509#1" />
-                <element signature="method#setupTable#0;class#BookingsController#0" />
-                <element signature="e#2461#2692#1" />
-                <element signature="e#2563#2682#1" />
-                <element signature="e#2628#2854#1" />
-                <element signature="e#2690#2836#1" />
-                <element signature="method#addBookingItems#0;class#BookingsController#0" />
-                <element signature="e#2748#2789#1" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Programs/Java/jdk1.8.0_191/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="2547" selection-start-line="2547" selection-end-line="2547" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/BookingItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-              <folding>
-                <element signature="e#2125#2126#0" expanded="true" />
-                <element signature="e#2152#2153#0" expanded="true" />
-                <element signature="e#2199#2200#0" expanded="true" />
-                <element signature="e#2231#2232#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Booking.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
-              <folding>
-                <element signature="method#Booking#0;class#Booking#0" />
-                <element signature="method#toString#0;class#Booking#0" />
               </folding>
             </state>
           </provider>
@@ -129,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Controllers/CartController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="237" column="26" selection-start-line="237" selection-start-column="26" selection-end-line="237" selection-end-column="26" />
+            <state relative-caret-position="51">
+              <caret line="188" column="31" lean-forward="true" selection-start-line="188" selection-start-column="31" selection-end-line="188" selection-end-column="31" />
               <folding>
                 <element signature="method#cashOrderConfirmation#0;class#CartController#0" />
                 <element signature="method#arrayContainsItem#0;class#CartController#0" />
@@ -213,8 +164,8 @@
         <option value="$PROJECT_DIR$/src/main/dummyData.java" />
         <option value="$PROJECT_DIR$/src/main/Controllers/SelectTheatreSeatsController.java" />
         <option value="$PROJECT_DIR$/src/main/BookingItem.java" />
-        <option value="$PROJECT_DIR$/src/main/Controllers/CartController.java" />
         <option value="$PROJECT_DIR$/src/main/Booking.java" />
+        <option value="$PROJECT_DIR$/src/main/Controllers/CartController.java" />
         <option value="$PROJECT_DIR$/src/main/Controllers/BookingsController.java" />
       </list>
     </option>
@@ -284,7 +235,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553126536667" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553127660140" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -407,12 +358,12 @@
       <workItem from="1552939097443" duration="25000" />
       <workItem from="1552948109282" duration="2096000" />
       <workItem from="1553076698155" duration="2843000" />
-      <workItem from="1553118512456" duration="2955000" />
+      <workItem from="1553118512456" duration="3909000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105009000" />
+    <option name="totallyTimeSpent" value="105963000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -700,16 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Controllers/CardPaymentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="102" column="37" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
-          <folding>
-            <element signature="method#fieldError#0;class#CardPaymentController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Controllers/MoviesController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -810,13 +751,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Controllers/CartController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/BookingItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="237" column="26" selection-start-line="237" selection-start-column="26" selection-end-line="237" selection-end-column="26" />
+        <state relative-caret-position="119">
+          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
           <folding>
-            <element signature="method#cashOrderConfirmation#0;class#CartController#0" />
-            <element signature="method#arrayContainsItem#0;class#CartController#0" />
+            <element signature="e#2125#2126#0" expanded="true" />
+            <element signature="e#2152#2153#0" expanded="true" />
+            <element signature="e#2199#2200#0" expanded="true" />
+            <element signature="e#2231#2232#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -832,40 +775,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/BookingItem.java">
+    <entry file="jar://D:/Programs/Java/jdk1.8.0_191/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+        <state relative-caret-position="3147">
+          <caret line="2547" selection-start-line="2547" selection-end-line="2547" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Controllers/CardPaymentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="94" column="37" selection-start-line="94" selection-start-column="37" selection-end-line="94" selection-end-column="37" />
           <folding>
-            <element signature="e#2125#2126#0" expanded="true" />
-            <element signature="e#2152#2153#0" expanded="true" />
-            <element signature="e#2199#2200#0" expanded="true" />
-            <element signature="e#2231#2232#0" expanded="true" />
+            <element signature="method#initialize#0;class#CardPaymentController#0" />
+            <element signature="class#871:1392" />
+            <element signature="method#changed#0;class#871:1392" />
+            <element signature="e#1081#1215#1" />
+            <element signature="e#1250#1307#1" />
+            <element signature="e#1312#1368#1" />
+            <element signature="class#1444:1963" />
+            <element signature="method#changed#0;class#1444:1963" />
+            <element signature="e#1654#1785#1" />
+            <element signature="e#1819#1877#1" />
+            <element signature="e#1882#1939#1" />
+            <element signature="class#2012:2519" />
+            <element signature="method#changed#0;class#2012:2519" />
+            <element signature="e#2222#2347#1" />
+            <element signature="e#2381#2436#1" />
+            <element signature="e#2441#2495#1" />
+            <element signature="method#confirmPayment#0;class#CardPaymentController#0" />
+            <element signature="e#2605#2690#1" />
+            <element signature="e#2714#2799#1" />
+            <element signature="e#2820#2904#1" />
+            <element signature="e#2910#3105#1" />
+            <element signature="method#fieldError#0;class#CardPaymentController#0" />
+            <element signature="method#orderConfirmation#0;class#CardPaymentController#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Programs/Java/jdk1.8.0_191/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Controllers/CartController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="2547" selection-start-line="2547" selection-end-line="2547" />
+        <state relative-caret-position="51">
+          <caret line="188" column="31" lean-forward="true" selection-start-line="188" selection-start-column="31" selection-end-line="188" selection-end-column="31" />
+          <folding>
+            <element signature="method#cashOrderConfirmation#0;class#CartController#0" />
+            <element signature="method#arrayContainsItem#0;class#CartController#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Controllers/BookingsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="77" column="39" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
+        <state relative-caret-position="631">
+          <caret line="81" column="44" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="44" />
           <folding>
-            <element signature="method#initialize#0;class#BookingsController#0" />
             <element signature="e#1460#1509#1" />
-            <element signature="method#setupTable#0;class#BookingsController#0" />
-            <element signature="e#2461#2692#1" />
-            <element signature="e#2563#2682#1" />
-            <element signature="e#2628#2854#1" />
-            <element signature="e#2690#2836#1" />
-            <element signature="method#addBookingItems#0;class#BookingsController#0" />
-            <element signature="e#2748#2789#1" />
           </folding>
         </state>
       </provider>

@@ -186,7 +186,7 @@ public class CartController implements Initializable {
 
     @FXML void cashPayment() {
         if (tableRows.size() > 0) {
-            Integer userId = null;
+            Integer userId = 0;
             if (baseController.getLoggedInUser() != null) {
                 userId = baseController.getLoggedInUser().getId();
             }
@@ -195,7 +195,7 @@ public class CartController implements Initializable {
             Booking order = new Booking(
                     userId,
                     baseController.generateBookingId(),
-                    null,
+                    0,
                     LocalDate.now(),
                     "Cash"
             );

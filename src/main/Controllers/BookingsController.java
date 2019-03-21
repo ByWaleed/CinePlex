@@ -62,7 +62,7 @@ public class BookingsController implements Initializable {
         if (baseController.getLoggedInUser() != null) {
             for (Booking booking : bookings) {
 
-                if (booking.getUserId() != null) {
+                if (booking.getUserId() != 0) {
                     if (booking.getUserId().equals(userId)) {
                         showBookingItems(booking.getBookingId());
                     }
@@ -78,7 +78,9 @@ public class BookingsController implements Initializable {
     private void showBookingItems(Integer bookingId) {
         ArrayList<BookingItem> bookingItems = baseController.getBookingItems();
         for (BookingItem item : bookingItems) {
-            this.bookingItems.add(item);
+            if (item.getBookingId() == bookingId) {
+                this.bookingItems.add(item);
+            }
         }
     }
 }
