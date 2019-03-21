@@ -13,9 +13,9 @@
          <children>
             <TableView fx:id="ordersTable" layoutX="20.0" layoutY="80.0" prefHeight="503.0" prefWidth="910.0">
               <columns>
-                  <TableColumn fx:id="dateCol" prefWidth="92.0" text="DATE" />
-                  <TableColumn fx:id="orderIdCol" prefWidth="88.0" text="ORDER ID" />
-                <TableColumn fx:id="nameCol" prefWidth="353.0" text="PRODUCT NAME" />
+                  <TableColumn fx:id="dateCol" prefWidth="145.0" text="DATE" />
+                  <TableColumn fx:id="orderIdCol" prefWidth="61.0" text="ORDER ID" />
+                <TableColumn fx:id="nameCol" prefWidth="327.0" text="PRODUCT NAME" />
                   <TableColumn fx:id="quantityCol" prefWidth="125.0" text="QUANTITY" />
                   <TableColumn fx:id="priceCol" prefWidth="138.0" text="UNIT PRICE" />
                   <TableColumn fx:id="totalCol" prefWidth="98.0" text="TOTAL" />

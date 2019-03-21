@@ -5,6 +5,7 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -13,8 +14,11 @@ import main.BookingItem;
 import main.CartScreenItem;
 
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.ResourceBundle;
 
 public class BookingsController implements Initializable {
@@ -26,18 +30,16 @@ public class BookingsController implements Initializable {
     @FXML private TableColumn<BookingItem, Double> priceCol;
     @FXML private TableColumn<BookingItem, Double> totalCol;
 
-    private ArrayList<Booking> bookings = baseController.getBookings();
-    private ArrayList<BookingItem> bookingItems = baseController.getBookingItems();
+    private ArrayList<BookingItem> bookingItems = new ArrayList<>(0);
     private ObservableList<BookingItem> bookingItemsOL = FXCollections.observableArrayList(bookingItems);
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        for (BookingItem item : baseController.getBookingItems()) {
+        System.out.println("Number of Bookings: " + baseController.getBookings().size());
+        for (Booking item : baseController.getBookings()) {
             System.out.println(item);
         }
-
         setupTable();
-
     }
 
     private void setupTable() {
@@ -51,6 +53,32 @@ public class BookingsController implements Initializable {
         priceCol.setCellValueFactory(new PropertyValueFactory<>("itemPrice"));
         totalCol.setCellValueFactory(new PropertyValueFactory<>("totalPrice"));
 
+
+        // Get all bookings & current user->id
+        ArrayList<Booking> bookings = baseController.getBookings();
+        int userId = baseController.getLoggedInUser().getId();
+
+        // Get user bookings
+        if (baseController.getLoggedInUser() != null) {
+            for (Booking booking : bookings) {
+
+                if (booking.getUserId() != null) {
+                    if (booking.getUserId().equals(userId)) {
+                        showBookingItems(booking.getBookingId());
+                    }
+                }
+
+            }
+        }
+
+        bookingItemsOL = FXCollections.observableArrayList(bookingItems);
         ordersTable.setItems(bookingItemsOL);
+    }
+
+    private void showBookingItems(Integer bookingId) {
+        ArrayList<BookingItem> bookingItems = baseController.getBookingItems();
+        for (BookingItem item : bookingItems) {
+            this.bookingItems.add(item);
+        }
     }
 }

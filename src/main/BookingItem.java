@@ -1,5 +1,7 @@
 package main;
 
+import java.time.LocalDateTime;
+
 public class BookingItem {
 
     private Integer bookingId;
@@ -10,8 +12,9 @@ public class BookingItem {
     private Double itemPrice;
     private Integer quantity;
     private Double totalPrice;
+    private LocalDateTime date;
 
-    public BookingItem(Integer bookingId, Integer itemId, String itemType, Integer seatId, String itemName, Double itemPrice, Integer quantity) {
+    public BookingItem(Integer bookingId, Integer itemId, String itemType, Integer seatId, String itemName, Double itemPrice, Integer quantity, LocalDateTime date) {
         this.bookingId = bookingId;
         this.itemId = itemId;
         this.itemType = itemType;
@@ -20,6 +23,7 @@ public class BookingItem {
         this.itemPrice = itemPrice;
         this.quantity = quantity;
         this.totalPrice = quantity * itemPrice;
+        this.date = date;
     }
 
     public Integer getBookingId() {
@@ -86,6 +90,14 @@ public class BookingItem {
         this.totalPrice = totalPrice;
     }
 
+    public LocalDateTime getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDateTime date) {
+        this.date = date;
+    }
+
     @Override
     public String toString() {
         return "BookingItem{" +
@@ -97,6 +109,7 @@ public class BookingItem {
                 ", itemPrice=" + itemPrice +
                 ", quantity=" + quantity +
                 ", totalPrice=" + totalPrice +
+                ", date=" + date +
                 '}';
     }
 }

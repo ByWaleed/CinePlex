@@ -1,6 +1,7 @@
 package main;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Booking {
     private Integer userId;
@@ -55,5 +56,16 @@ public class Booking {
 
     public void setBookingType(String bookingType) {
         this.bookingType = bookingType;
+    }
+
+    @Override
+    public String toString() {
+        return "Booking{" +
+                "userId=" + userId +
+                ", bookingId=" + bookingId +
+                ", paymentId=" + paymentId +
+                ", date=" + date +
+                ", bookingType='" + bookingType + '\'' +
+                '}';
     }
 }

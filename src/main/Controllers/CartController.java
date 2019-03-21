@@ -26,6 +26,7 @@ import java.awt.Button;
 import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.ResourceBundle;
@@ -213,7 +214,8 @@ public class CartController implements Initializable {
                             item.getSeatid(),
                             item.getItemName(),
                             item.getItemPrice(),
-                            quantity
+                            quantity,
+                            LocalDateTime.now()
                     ));
                 } else {
                     quantityItems.add(new BookingItem(
@@ -223,12 +225,13 @@ public class CartController implements Initializable {
                             item.getSeatid(),
                             item.getItemName(),
                             item.getItemPrice(),
-                            1
+                            1,
+                            LocalDateTime.now()
                     ));
                     /*System.out.println("Add more quantity to  " + item);*/
                 }
             }
-
+            baseController.getBookings().add(order);
             cashOrderConfirmation(order.getBookingId());
             emptyCart();
         } else {
