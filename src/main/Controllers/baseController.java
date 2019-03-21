@@ -15,6 +15,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 import main.*;
 
 import java.awt.*;
@@ -266,8 +267,7 @@ public class baseController implements Initializable {
         alert.showAndWait();
     }
 
-    @FXML
-    void closeApplication(MouseEvent event) {
-        Platform.exit();
+    @FXML void closeApplication(MouseEvent event) {
+        ((Node)(event.getSource())).getScene().getWindow().hide();
     }
 }

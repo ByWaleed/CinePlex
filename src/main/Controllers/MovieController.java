@@ -6,9 +6,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.effect.DropShadow;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.scene.web.WebView;
 import javafx.stage.Modality;
@@ -36,13 +38,11 @@ public class MovieController implements Initializable{
     @FXML private Text movieYear;
     @FXML private Text movieGenere;
     @FXML private Text movieDirector;
-    @FXML private Text movieWriters;
     @FXML private Text movieActors;
     @FXML private Text moviePlot;
     @FXML private Text movieRating;
     @FXML private Text movieRated;
     @FXML private Text movieAwards;
-    @FXML private Text movieSeatsAvailable;
     @FXML private Text moviePrice;
 
     @Override
@@ -60,17 +60,16 @@ public class MovieController implements Initializable{
         posterLocation = posterLocation + "_V1_SX400.jpg";
 
         moviePoster.setImage(new Image(posterLocation));
+        moviePoster.setEffect(new DropShadow(40, Color.BLACK));
         movieTitle.setText(movie.getTitle());
         movieYear.setText("" + movie.getReleaseDate());
         movieGenere.setText(movie.getGenera());
         movieDirector.setText(movie.getDirector());
-        movieWriters.setText(movie.getWriter());
         movieActors.setText(movie.getActors());
         moviePlot.setText(movie.getDescription());
         movieRating.setText("" + movie.getRating());
         movieRated.setText(movie.getRated());
         movieAwards.setText(movie.getAwards());
-        movieSeatsAvailable.setText("");
         moviePrice.setText("£" + movie.getPrice());
     }
 
@@ -106,7 +105,6 @@ public class MovieController implements Initializable{
         System.out.println(response);
         JSONObject jsonResponse = new JSONObject(response);
 
-        System.out.println(jsonResponse);
         /*for (int i = 0; i < arr.length(); i++)
             System.out.println(arr.getInt(i));*/
         return response.toString();

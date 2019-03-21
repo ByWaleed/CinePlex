@@ -7,12 +7,14 @@ import javafx.fxml.Initializable;
 import javafx.scene.Cursor;
 import javafx.scene.Node;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.effect.DropShadow;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image ;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
 import main.Movie;
 
 import java.awt.*;
@@ -36,6 +38,7 @@ public class MoviesController implements Initializable {
     public void displayMovies() {
 
         allMoviesSP.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+        allMoviesSP.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
 
         ArrayList<Movie> movies = baseController.getMovies();
 
@@ -64,6 +67,7 @@ public class MoviesController implements Initializable {
                 // Add Movies to r HBox
                 Image img = new Image(movies.get(moviesAdded).getPoster());
                 ImageView posterIV = new ImageView(img);
+                posterIV.setEffect(new DropShadow(20, Color.BLACK));
                 posterIV.setX(c * 230);
                 posterIV.setCursor(Cursor.HAND);
                 posterIV.setId("" + moviesAdded);

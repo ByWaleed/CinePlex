@@ -24,7 +24,7 @@
                   <Font name="Arial" size="12.0" />
                </font>
                <graphic>
-                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../resources/images/icons/movie.png" />
                      </image>
@@ -39,7 +39,7 @@
                   <Insets bottom="5.0" />
                </VBox.margin>
                <graphic>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../resources/images/icons/popcorn.png" />
                      </image>
@@ -53,7 +53,7 @@
                   <Insets bottom="5.0" />
                </VBox.margin>
                <graphic>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../resources/images/icons/cart.png" />
                      </image>
@@ -67,7 +67,7 @@
                   <Insets bottom="5.0" />
                </VBox.margin>
                <graphic>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../resources/images/icons/orders.png" />
                      </image>
@@ -84,7 +84,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
                <graphic>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../resources/images/icons/account.png" />
                      </image>
@@ -92,7 +92,7 @@
                </graphic></Button>
             <Pane prefHeight="155.0" prefWidth="250.0">
                <children>
-                  <ImageView fitHeight="78.0" fitWidth="78.0" layoutX="86.0" layoutY="39.0" onDragDetected="#closeApplication" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="78.0" fitWidth="78.0" layoutX="86.0" layoutY="39.0" onMouseClicked="#closeApplication" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../resources/images/icons/exit.png" />
                      </image>
@@ -103,6 +103,7 @@
                </children>
             </Pane>
          </children></VBox>
+      <AnchorPane fx:id="mainContentPane" layoutX="250.0" prefHeight="600.0" prefWidth="950.0" />
    </children>
    <stylesheets>
       <URL value="@../resources/css/styles.css" />

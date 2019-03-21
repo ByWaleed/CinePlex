@@ -8,89 +8,127 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="600.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.MovieController">
+<AnchorPane prefHeight="600.0" prefWidth="950.0" stylesheets="@../resources/css/movie.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.MovieController">
    <children>
-      <ImageView fx:id="moviePoster" fitHeight="592.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" x="4.0" y="4.0">
+      <ImageView fx:id="moviePoster" fitHeight="448.0" fitWidth="303.0" layoutX="589.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true" x="4.0" y="4.0">
          <image>
             <Image url="@../resources/images/movies/400.jpg" />
          </image>
       </ImageView>
-      <Text fx:id="movieTitle" layoutX="433.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Batman vs Superman Dawn of Justice">
-         <font>
-            <Font size="22.0" />
-         </font>
-      </Text>
-      <Text fx:id="movieYear" layoutX="433.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25 Mar 2016" />
-      <Text fx:id="movieGenere" layoutX="528.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Action, Adventure" />
-      <ImageView fitHeight="17.0" fitWidth="26.0" layoutX="914.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../resources/images/rating.png" />
-         </image>
-      </ImageView>
-      <Text fx:id="movieRating" layoutX="874.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7.9">
-         <font>
-            <Font size="29.0" />
-         </font>
-      </Text>
-      <Text layoutX="433.0" layoutY="195.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Director/s:">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <Text layoutX="433.0" layoutY="225.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Writer:">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <Text layoutX="433.0" layoutY="255.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Actors:">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <Text fx:id="movieDirector" fill="#002bff" layoutX="502.0" layoutY="195.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Zack Snyder" />
-      <Text fx:id="movieWriters" fill="#002bff" layoutX="482.0" layoutY="225.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Chris Terrio, David S. Goyer | 5 more credits »" />
-      <Text fx:id="movieActors" fill="#002bff" layoutX="481.0" layoutY="255.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Ben Affleck, Henry Cavill, Amy Adams | See full cast &amp; crew » " />
-      <Button layoutX="833.0" layoutY="152.0" mnemonicParsing="false" onAction="#watchTrailer" text="WATCH TRAILER">
+      <AnchorPane layoutX="20.0" layoutY="70.0">
+         <children>
+            <Text fx:id="movieGenere" fill="#423f3feb" layoutX="42.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Action, Adventure">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="movieRating" layoutX="35.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7.9" textAlignment="CENTER" wrappingWidth="45.19921988248825">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#000000b2" layoutX="267.0" layoutY="184.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Director/s:">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="movieDirector" fill="#313236" layoutX="267.0" layoutY="202.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="MOVIE DIRECTOR">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="moviePlot" fill="#000107" layoutX="42.0" layoutY="319.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father the ambitious celestial being Ego." wrappingWidth="480.0">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="movieAwards" fill="#a49920" layoutX="42.0" layoutY="121.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="14 wins &amp; 30 nominations" textAlignment="RIGHT">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="movieDirector1" fill="#002bff" layoutX="356.0" layoutY="344.6328125" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="moviePrice" fill="#313236" layoutX="42.0" layoutY="408.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="£0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="movieTitle" layoutX="40.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Batman vs Superman Dawn of Justice">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="21.0" fitWidth="36.0" layoutX="112.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/imdb-logo.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="66.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/10" textAlignment="CENTER" wrappingWidth="45.19921988248825">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#000000b2" layoutX="42.0" layoutY="184.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Premiere">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="movieYear" fill="#313236" layoutX="42.0" layoutY="201.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="MOVIE YEAR">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#000000b2" layoutX="42.0" layoutY="240.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Starring">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="movieActors" fill="#313236" layoutX="42.0" layoutY="259.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="ACTOR 1, ACTOR 2, ACTOR 3">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#000000b2" layoutX="42.0" layoutY="298.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Story Line">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="movieRated" fill="#313236" layoutX="162.0" layoutY="406.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="PG-13">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#000000b2" layoutX="42.0" layoutY="384.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Price">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="#000000b2" layoutX="164.0" layoutY="384.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button layoutX="331.0" layoutY="529.0" mnemonicParsing="false" onAction="#makeBooking" prefHeight="50.0" prefWidth="200.0" styleClass="btn-booking" text="MAKE BOOKING">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
-      </Button>
-      <Text layoutX="433.0" layoutY="345.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Plot:">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="Arial Bold" size="12.0" />
          </font>
-      </Text>
-      <Text fx:id="moviePlot" fill="#000107" layoutX="433.0" layoutY="365.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father the ambitious celestial being Ego." wrappingWidth="480.0" />
-      <Button layoutX="430.0" layoutY="536.0" mnemonicParsing="false" onAction="#makeBooking" prefHeight="39.0" prefWidth="174.0" text="MAKE BOOKING">
+      </Button>
+      <Button graphicTextGap="15.0" layoutX="82.0" layoutY="529.0" mnemonicParsing="false" onAction="#watchTrailer" prefHeight="50.0" prefWidth="200.0" styleClass="btn-trailer" text="WATCH TRAILER">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
          <font>
-            <Font size="18.0" />
+            <Font name="Arial Bold" size="12.0" />
          </font>
       </Button>
-      <Text layoutX="433.0" layoutY="285.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Rated:">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <Text fx:id="movieRated" fill="#002bff" layoutX="481.0" layoutY="285.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="PG-13" />
-      <Text layoutX="433.0" layoutY="315.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Awards:">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <Text fx:id="movieAwards" fill="#002bff" layoutX="489.0" layoutY="315.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="14 wins &amp; 30 nominations." />
-      <Text fx:id="movieSeatsAvailable" fill="#002bff" layoutX="721.0" layoutY="560.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="12 Seats Available, in Theatre 1, 2 &amp; 3" textAlignment="RIGHT" />
-      <Text fx:id="movieDirector1" fill="#002bff" layoutX="786.0" layoutY="426.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Text>
-      <Text fx:id="moviePrice" layoutX="433.0" layoutY="522.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="£0.0">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Text>
    </children>
 </AnchorPane>

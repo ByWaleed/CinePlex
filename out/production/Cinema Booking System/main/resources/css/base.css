@@ -12,5 +12,5 @@
 }
 
 .btn-nav:hover {
-    -fx-background-color: #515b80;
+    -fx-background-color: rgba(0, 0, 0, 0.12);
 }
