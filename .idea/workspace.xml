@@ -6,74 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cinema Booking System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema Booking System.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/META-INF/Cinema Booking System.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/resources/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/resources/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/resources/css/loginRegister.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/resources/css/loginRegister.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/resources/css/movie.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/resources/css/movie.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/resources/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/base.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/base.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/cardPayment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/cardPayment.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/cart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/cart.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/movie.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/movie.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/movies.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/movies.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/navigation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/navigation.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/selectTheatreSeats.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/selectTheatreSeats.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/snack.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/snack.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/snacks.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/snacks.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Accounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BookingItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BookingItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CartItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/CartScreenItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CartScreenItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Controllers/BookingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/BookingsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Controllers/CardPaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/CardPaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Controllers/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/CartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Controllers/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/MovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Controllers/MoviesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/MoviesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Controllers/SelectTheatreSeatsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/SelectTheatreSeatsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Controllers/SnackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/SnackController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Controllers/SnacksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/SnacksController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Controllers/baseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/baseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Controllers/loginRegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/loginRegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Controllers/navigationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/navigationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Payment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ReservedSeat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ReservedSeat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Seat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Session.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Snack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Snack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Theatre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Theatre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/dummyData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/dummyData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/loginRegister.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/loginRegister.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/movie.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/movie.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/views/base.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/views/base.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/views/cardPayment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/views/cardPayment.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/views/cart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/views/cart.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/views/movie.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/views/movie.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/views/movies.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/views/movies.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/views/navigation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/views/navigation.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/views/selectTheatreSeats.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/views/selectTheatreSeats.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/views/snack.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/views/snack.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/views/snacks.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/views/snacks.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -125,51 +58,38 @@
     <ui_properties converted="true" />
     <breakpoint_rules converted="true" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1161585675">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="8" />
-          <entry key="md" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="8" />
-          <entry key="PLAIN_TEXT" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="355" />
-          <entry key="md" value="82" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="355" />
-          <entry key="PLAIN_TEXT" value="82" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+        <entry file="file://$PROJECT_DIR$/src/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="136">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Controllers/BookingsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Controllers/CartController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2669">
+              <caret line="188" column="31" selection-start-line="188" selection-start-column="31" selection-end-line="188" selection-end-column="31" />
+              <folding>
+                <element signature="method#cashOrderConfirmation#0;class#CartController#0" />
+                <element signature="method#arrayContainsItem#0;class#CartController#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -263,8 +183,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="2" />
+    <option name="x" value="646" />
+    <option name="y" value="106" />
     <option name="width" value="979" />
     <option name="height" value="1050" />
   </component>
@@ -278,23 +198,22 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="SDD-Y1-Assignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SDD-Y1-Assignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="Cinema Booking System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cinema Booking System" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SDD-Y1-Assignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SDD-Y1-Assignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="Cinema Booking System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cinema Booking System" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SDD-Y1-Assignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SDD-Y1-Assignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="Cinema Booking System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cinema Booking System" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -314,7 +233,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553163492247" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563232620862" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -441,17 +360,17 @@
       <workItem from="1553076698155" duration="2843000" />
       <workItem from="1553118512456" duration="21435000" />
       <workItem from="1553159602078" duration="1233000" />
+      <workItem from="1563230252799" duration="1147000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125203000" />
+    <option name="totallyTimeSpent" value="126716000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.14749734" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.14925373" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -460,7 +379,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3279743" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.16576381" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21543409" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2793959" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -474,7 +393,7 @@
       <window_info anchor="bottom" id="Messages" order="13" weight="0.26152197" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="15" />
-      <window_info anchor="bottom" id="Terminal" order="16" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="16" visible="true" weight="0.3290461" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -530,9 +449,6 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
@@ -781,13 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Controllers/BookingsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Bootstrap/application.css" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/css/loginRegister.css">
       <provider selected="true" editor-type-id="text-editor" />
@@ -846,13 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="69" column="16" lean-forward="true" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -942,25 +844,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Controllers/CartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="227" column="30" lean-forward="true" selection-start-line="227" selection-start-column="30" selection-end-line="227" selection-end-column="30" />
-          <folding>
-            <element signature="method#cashOrderConfirmation#0;class#CartController#0" />
-            <element signature="method#arrayContainsItem#0;class#CartController#0" />
-            <element signature="e#11226#11227#0" expanded="true" />
-            <element signature="e#11286#11287#0" expanded="true" />
-            <element signature="e#11349#11350#0" expanded="true" />
-            <element signature="e#11385#11386#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Controllers/BookingsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Controllers/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2669">
+          <caret line="188" column="31" selection-start-line="188" selection-start-column="31" selection-end-line="188" selection-end-column="31" />
+          <folding>
+            <element signature="method#cashOrderConfirmation#0;class#CartController#0" />
+            <element signature="method#arrayContainsItem#0;class#CartController#0" />
+          </folding>
         </state>
       </provider>
     </entry>
