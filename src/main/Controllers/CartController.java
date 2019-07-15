@@ -230,6 +230,14 @@ public class CartController implements Initializable {
                     ));
                     /*System.out.println("Add more quantity to  " + item);*/
                 }
+
+                if (item.getItemType() == "Snack") {
+                    for (Snack snack : baseController.getSnacks()) {
+                        if (snack.getId().equals(item.getItemId())){
+                            snack.setStock(snack.getStock() - 1);
+                        }
+                    }
+                }
             }
             baseController.getBookings().add(order);
             cashOrderConfirmation(order.getBookingId());

@@ -75,6 +75,7 @@ public class baseController implements Initializable {
         dummyData.createTheatres();
         dummyData.createSeats();
         dummyData.createSessions();
+        dummyData.createSnacks();
 
         // Show movies screen by default
         loadUI("/main/views/movies.fxml");

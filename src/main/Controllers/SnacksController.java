@@ -30,16 +30,7 @@ public class SnacksController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        createDummySnacks();
         displaySnacks();
-    }
-
-    private void createDummySnacks() {
-        ArrayList<Snack> snacks = new ArrayList<> (0);
-        snacks.add(new Snack(snacks.size() + 1, "Popcorn Bucket", 2.50, 25, "https://i.imgur.com/dV5qHyG.jpg"));
-        snacks.add(new Snack(snacks.size() + 1, "Pepsi Can", 0.75, 25, "https://i.imgur.com/vgycWNe.jpg"));
-
-        baseController.setSnacks(snacks);
     }
 
     public void displaySnacks() {

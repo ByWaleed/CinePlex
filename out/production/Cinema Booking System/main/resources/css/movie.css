@@ -1,4 +1,3 @@
-/*
 .btn-booking {
     -fx-border-radius: 5;
     -fx-background-color: #006885;
@@ -17,4 +16,11 @@
     -fx-text-fill: #006885;
     -fx-border-radius: 5;
     -fx-border-color: #006885;
-}*/
+}
+
+.btn-trailer:hover{
+    -fx-text-fill: #fff;
+    -fx-background-color: #006885;
+    -fx-border-radius: 5;
+    -fx-border-color: #006885;
+}

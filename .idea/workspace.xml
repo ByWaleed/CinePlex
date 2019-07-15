@@ -2,23 +2,78 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/src/main/Controllers/SelectTheatreSeatsController.java" line="109" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/Controllers/CartController.java" line="300" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/Controllers/CartController.java" line="308" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/movie.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cinema Booking System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema Booking System.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/META-INF/Cinema Booking System.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/resources/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/resources/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/resources/css/loginRegister.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/resources/css/loginRegister.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/resources/css/movie.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/resources/css/movie.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/resources/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/base.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/base.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/cardPayment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/cardPayment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/cart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/cart.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/movie.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/movie.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/movies.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/movies.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/navigation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/navigation.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/selectTheatreSeats.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/selectTheatreSeats.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/snack.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/snack.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/snacks.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema Booking System/main/views/snacks.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Accounts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BookingItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BookingItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CartItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/CartScreenItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CartScreenItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Controllers/BookingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/BookingsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Controllers/CardPaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/CardPaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Controllers/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/CartController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Controllers/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/MovieController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Controllers/MoviesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/MoviesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Controllers/SelectTheatreSeatsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/SelectTheatreSeatsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Controllers/SnackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/SnackController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Controllers/SnacksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/SnacksController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Controllers/baseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/baseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Controllers/loginRegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/loginRegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Controllers/navigationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Controllers/navigationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ReservedSeat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ReservedSeat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Seat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Session.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Snack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Snack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Theatre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Theatre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/dummyData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/dummyData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/loginRegister.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/loginRegister.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/movie.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/movie.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/views/base.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/views/base.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/views/cardPayment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/views/cardPayment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/views/cart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/views/cart.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/views/movie.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/views/movie.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/views/movies.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/views/movies.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/views/navigation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/views/navigation.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/views/selectTheatreSeats.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/views/selectTheatreSeats.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/views/snack.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/views/snack.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/views/snacks.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/views/snacks.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,46 +125,51 @@
     <ui_properties converted="true" />
     <breakpoint_rules converted="true" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1161585675">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="8" />
+          <entry key="md" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="8" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="355" />
+          <entry key="md" value="82" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="355" />
+          <entry key="PLAIN_TEXT" value="82" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/css/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15640">
-              <caret line="920" selection-start-line="920" selection-end-line="920" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/css/base.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/Controllers/MovieController.java">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
-              <folding>
-                <element signature="method#watchTrailer#0;class#MovieController#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/css/movie.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -127,7 +187,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>poster</find>
       <find>pos</find>
       <find>genera</find>
       <find>ra</find>
@@ -157,6 +216,7 @@
       <find>swing</find>
       <find>height</find>
       <find>font</find>
+      <find>awards</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -173,7 +233,6 @@
         <option value="$PROJECT_DIR$/src/main/Main.java" />
         <option value="$PROJECT_DIR$/src/main/Movie.java" />
         <option value="$PROJECT_DIR$/src/main/Snack.java" />
-        <option value="$PROJECT_DIR$/src/main/Controllers/SnacksController.java" />
         <option value="$PROJECT_DIR$/src/main/CartItem.java" />
         <option value="$PROJECT_DIR$/src/main/CartScreenItem.java" />
         <option value="$PROJECT_DIR$/src/main/Controllers/SnackController.java" />
@@ -183,21 +242,23 @@
         <option value="$PROJECT_DIR$/src/main/Controllers/CardPaymentController.java" />
         <option value="$PROJECT_DIR$/src/main/Session.java" />
         <option value="$PROJECT_DIR$/src/main/User.java" />
-        <option value="$PROJECT_DIR$/src/main/dummyData.java" />
         <option value="$PROJECT_DIR$/src/main/BookingItem.java" />
         <option value="$PROJECT_DIR$/src/main/Booking.java" />
-        <option value="$PROJECT_DIR$/src/main/Controllers/CartController.java" />
         <option value="$PROJECT_DIR$/src/main/Controllers/BookingsController.java" />
         <option value="$PROJECT_DIR$/src/main/Controllers/SelectTheatreSeatsController.java" />
         <option value="$PROJECT_DIR$/src/main/views/movies.fxml" />
         <option value="$PROJECT_DIR$/src/main/views/base.fxml" />
-        <option value="$PROJECT_DIR$/src/main/Controllers/baseController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/css/base.css" />
         <option value="$PROJECT_DIR$/src/main/resources/css/movies.css" />
         <option value="$PROJECT_DIR$/src/main/resources/css/styles.css" />
         <option value="$PROJECT_DIR$/src/main/Controllers/MoviesController.java" />
         <option value="$PROJECT_DIR$/src/main/Controllers/MovieController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/css/movie.css" />
+        <option value="$PROJECT_DIR$/src/main/Controllers/SnacksController.java" />
+        <option value="$PROJECT_DIR$/src/main/Controllers/baseController.java" />
+        <option value="$PROJECT_DIR$/src/main/dummyData.java" />
+        <option value="$PROJECT_DIR$/src/main/Controllers/CartController.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -207,9 +268,7 @@
     <option name="width" value="979" />
     <option name="height" value="1050" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -218,44 +277,31 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Cinema Booking System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema Booking System" type="462c0819:PsiDirectoryNode" />
+              <item name="SDD-Y1-Assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDD-Y1-Assignment2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Cinema Booking System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema Booking System" type="462c0819:PsiDirectoryNode" />
+              <item name="SDD-Y1-Assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDD-Y1-Assignment2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Cinema Booking System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema Booking System" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cinema Booking System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema Booking System" type="462c0819:PsiDirectoryNode" />
+              <item name="SDD-Y1-Assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDD-Y1-Assignment2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cinema Booking System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cinema Booking System" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -268,7 +314,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553149274815" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553163492247" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -313,6 +359,7 @@
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="Cinema Booking System" />
+      <option name="VM_PARAMETERS" value="-Dhttp.proxyHost=wwwproxy.hud.ac.uk -Dhttp.proxyPort=3128 -Dhttps.proxyHost=wwwproxy.hud.ac.uk -Dhttps.proxyPort=3128" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sample.*" />
@@ -398,12 +445,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124722000" />
+    <option name="totallyTimeSpent" value="125203000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.14765458" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.14749734" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -412,7 +460,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3279743" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.1661273" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.16576381" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2793959" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -479,6 +527,12 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
@@ -580,17 +634,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/views/cashPrintOrder.fxml" />
     <entry file="file://$PROJECT_DIR$/src/main/Controllers/CashPrintOrderController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/CartItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-          <folding>
-            <element signature="e#1320#1321#0" expanded="true" />
-            <element signature="e#1351#1352#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/views/bookings.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
@@ -645,24 +688,6 @@
             <element signature="method#setAccountType#0;class#User#0" />
             <element signature="method#setDateOfBirth#0;class#User#0" />
             <element signature="method#toString#0;class#User#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Controllers/SnacksController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="105" column="25" lean-forward="true" selection-start-line="92" selection-start-column="24" selection-end-line="105" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Controllers/SnackController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#updateTotal#0;class#SnackController#0" />
           </folding>
         </state>
       </provider>
@@ -758,32 +783,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Controllers/BookingsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-          <folding>
-            <element signature="e#1460#1509#1" />
-          </folding>
+        <state relative-caret-position="148">
+          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Controllers/CartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="235" column="24" lean-forward="true" selection-start-line="235" selection-start-column="24" selection-end-line="235" selection-end-column="24" />
-          <folding>
-            <element signature="method#cashOrderConfirmation#0;class#CartController#0" />
-            <element signature="method#arrayContainsItem#0;class#CartController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Bootstrap/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="25" lean-forward="true" selection-end-line="959" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Bootstrap/application.css" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/css/loginRegister.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -844,51 +849,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Controllers/baseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="270" column="66" selection-start-line="270" selection-start-column="66" selection-end-line="270" selection-end-column="66" />
-          <folding>
-            <element signature="e#2328#3222#0" />
-            <element signature="e#2467#2526#1" />
-            <element signature="e#2562#2621#1" />
-            <element signature="e#2659#2835#1" />
-            <element signature="e#2699#2767#1" />
-            <element signature="e#2773#2824#1" />
-            <element signature="e#2885#3108#1" />
-            <element signature="e#3151#3216#1" />
-            <element signature="e#3568#3612#0" />
-            <element signature="e#4959#5378#0" />
-            <element signature="e#5179#5301#1" />
-            <element signature="e#5236#5291#1" />
-            <element signature="e#6897#7028#0" />
-            <element signature="e#7131#7429#0" />
-            <element signature="e#7582#7583#0" expanded="true" />
-            <element signature="e#7655#7656#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dummyData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
-          <folding>
-            <element signature="method#createTheatres#0;class#dummyData#0" />
-            <element signature="method#createSeats#0;class#dummyData#0" />
-            <element signature="e#1396#1932#1" />
-            <element signature="e#1446#1922#1" />
-            <element signature="e#1510#1908#1" />
-            <element signature="e#1608#1746#1" />
-            <element signature="e#1752#1890#1" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -906,20 +870,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/css/movie.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Controllers/MovieController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+        <state relative-caret-position="552">
+          <caret line="136" selection-start-line="136" selection-end-line="136" />
           <folding>
             <element signature="method#watchTrailer#0;class#MovieController#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/movie.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dummyData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="method#createTheatres#0;class#dummyData#0" />
+            <element signature="method#createSeats#0;class#dummyData#0" />
+            <element signature="method#createMovies#0;class#dummyData#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Controllers/baseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="77" column="33" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
+          <folding>
+            <element signature="e#7582#7583#0" expanded="true" />
+            <element signature="e#7655#7656#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Controllers/SnacksController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="31" column="68" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="68" />
+          <folding>
+            <element signature="e#918#919#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/CartItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="e#1320#1321#0" expanded="true" />
+            <element signature="e#1351#1352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Controllers/SnackController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="33" column="57" lean-forward="true" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#updateTotal#0;class#SnackController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Controllers/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="227" column="30" lean-forward="true" selection-start-line="227" selection-start-column="30" selection-end-line="227" selection-end-column="30" />
+          <folding>
+            <element signature="method#cashOrderConfirmation#0;class#CartController#0" />
+            <element signature="method#arrayContainsItem#0;class#CartController#0" />
+            <element signature="e#11226#11227#0" expanded="true" />
+            <element signature="e#11286#11287#0" expanded="true" />
+            <element signature="e#11349#11350#0" expanded="true" />
+            <element signature="e#11385#11386#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
