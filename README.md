@@ -15,7 +15,7 @@
 
 ## ✨ Features
 
-- List of movies to choose from (easily extendable through OMDb API).
+- List of movies to choose from (OMDb API supported).
 - View individual movie info inclusing trailers.
 - Buy tickets for selected movie, theatre and time.
 - Basic cash and card payment methods.
