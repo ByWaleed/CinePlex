@@ -32,6 +32,7 @@ SImply clone ```https://github.com/ByWaleed/CinePlex.git``` and open up in your 
 Any contributions are welcomed.
 
 
+## 🪪 Licence
 
 MIT License
 
